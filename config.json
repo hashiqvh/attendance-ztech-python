@@ -1,0 +1,22 @@
+{
+    "endpoint": "https://pace.paceeducation.com/erp-api/sync/empAttSync.php",
+    "devices": [
+        {
+            "device_id": 1,
+            "ip_address": "10.30.141.3",
+            "port": 4370
+        },
+        {
+            "device_id": 2,
+            "ip_address": "10.30.141.4",
+            "port": 4370
+        },
+        {
+            "device_id": 3,
+            "ip_address": "10.30.141.5",
+            "port": 4370
+        }
+    ],
+    "buffer_limit": 3,
+    "log_level": "INFO"
+}
