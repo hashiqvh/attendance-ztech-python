@@ -122,7 +122,7 @@ def end_of_day_task():
     Fetch logs from all devices and push them to the server at the end of the day.
     """
     logging.info("Starting end-of-day log fetching...")
-    for device in devices:
+    for device in DEVICES:
         fetch_end_of_day_logs(device)
     logging.info("End-of-day log fetching completed.")
 
