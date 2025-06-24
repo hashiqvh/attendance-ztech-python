@@ -7,6 +7,8 @@ import time
 from zk import ZK
 import httpx
 
+with open("log.txt", "a") as f:
+    f.write(f"Script started at {datetime.now()}\n")
 # Load configuration from JSON file
 with open("config.json", "r") as config_file:
     config = json.load(config_file)
@@ -126,7 +128,6 @@ def end_of_day_task():
         fetch_end_of_day_logs(device)
     logging.info("End-of-day log fetching completed.")
 
-
 def capture_real_time_logs(device, shared_buffer):
     """
     Capture real-time attendance logs from a device.
@@ -165,6 +166,7 @@ def capture_real_time_logs(device, shared_buffer):
             logging.warning(
                 f"Failed to disconnect from device {device['device_id']}: {disconnect_error}"
             )
+
 
 
 def reconnect_devices(shared_buffer):
