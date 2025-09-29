@@ -29,7 +29,7 @@ def load_telegram_config():
     try:
         with open("config.json", "r") as f:
             cfg = json.load(f)
-        return cfg.get("telegram", {}) or {}
+        return cfg
     except Exception as e:
         logger.error(f"Failed to load config.json: {e}")
         return {}
@@ -73,12 +73,15 @@ def main():
     from_date = to_date - datetime.timedelta(days=30)
 
     # Telegram
-    tg_cfg = load_telegram_config()
+    config = load_telegram_config()
+    tg_cfg = config.get("telegram", {})
+    system_name = config.get("name", "Attendance System")
     notifier = TelegramNotifier(
         bot_token=tg_cfg.get("bot_token", ""),
         chat_id=tg_cfg.get("chat_id", ""),
         enabled=tg_cfg.get("enabled", False),
         notification_settings=tg_cfg.get("notifications", {}),
+        system_name=system_name
     )
 
     # Paths

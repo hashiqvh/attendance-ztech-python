@@ -1,5 +1,6 @@
 {
   "endpoint": "https://pace.paceeducation.com/erp-api/sync/empAttSync.php",
+  "name": "pace-attendance",
   "devices": [
     {
       "device_id": 1,

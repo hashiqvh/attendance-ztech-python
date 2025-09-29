@@ -94,11 +94,13 @@ BUFFER_LIMIT = int(config["buffer_limit"])
 DEVICES = config["devices"]
 
 telegram_config = config.get("telegram", {})
+system_name = config.get("name", "Attendance System")
 telegram_notifier = TelegramNotifier(
     bot_token=telegram_config.get("bot_token", ""),
     chat_id=telegram_config.get("chat_id", ""),
     enabled=telegram_config.get("enabled", False),
-    notification_settings=telegram_config.get("notifications", {})
+    notification_settings=telegram_config.get("notifications", {}),
+    system_name=system_name
 )
 
 logger.info(f"Configured devices: {len(DEVICES)} | Endpoint: {ENDPOINT} | Buffer limit: {BUFFER_LIMIT} | Telegram: {'ENABLED' if telegram_notifier.enabled else 'DISABLED'}")

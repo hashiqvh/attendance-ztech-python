@@ -49,11 +49,13 @@ def test_telegram_bot():
         return False
     
     # Initialize Telegram notifier
+    system_name = config.get("name", "Attendance System")
     telegram_notifier = TelegramNotifier(
         bot_token=bot_token,
         chat_id=chat_id,
         enabled=True,
-        notification_settings=telegram_config.get("notifications", {})
+        notification_settings=telegram_config.get("notifications", {}),
+        system_name=system_name
     )
     
     print(f"📱 Bot Token: {bot_token[:10]}...")
@@ -71,59 +73,69 @@ def test_telegram_bot():
     print()
     print("📤 Sending test notifications...")
     
-    # Test different notification types
-    test_notifications = [
-        ("startup", "🚀 System startup test"),
-        ("data_push", "📦 Data push test"),
-        ("end_of_day", "🌅 End-of-day test"),
-        ("errors", "❌ Error notification test"),
-        ("device_status", "📱 Device status test")
-    ]
+    # Test different notification types using proper methods
+    print("   Testing startup notification...")
+    success = telegram_notifier.send_message_sync(
+        f"🧪 <b>Test: {telegram_notifier.system_name} - System Startup</b>\n\n"
+        f"📅 <b>Time:</b> {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
+        f"📱 <b>Devices:</b> 3\n"
+        f"🌐 <b>Endpoint:</b> https://test.example.com\n"
+        f"✅ <b>Status:</b> Test startup notification"
+    )
+    if success:
+        print("   ✅ Startup notification sent successfully")
+    else:
+        print("   ❌ Startup notification failed to send")
     
-    for notification_type, description in test_notifications:
-        print(f"   Testing {description}...")
-        
-        if notification_type == "startup":
-            success = telegram_notifier.send_message_sync(
-                f"🧪 <b>Test: {description}</b>\n\n"
-                f"📅 <b>Time:</b> {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
-                f"✅ <b>Status:</b> This is a test notification"
-            )
-        elif notification_type == "data_push":
-            success = telegram_notifier.send_message_sync(
-                f"🧪 <b>Test: {description}</b>\n\n"
-                f"📅 <b>Time:</b> {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
-                f"📊 <b>Records:</b> 5\n"
-                f"✅ <b>Status:</b> Test data push successful"
-            )
-        elif notification_type == "end_of_day":
-            success = telegram_notifier.send_message_sync(
-                f"🧪 <b>Test: {description}</b>\n\n"
-                f"📅 <b>Time:</b> {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
-                f"📱 <b>Device:</b> 1\n"
-                f"📊 <b>Records:</b> 10\n"
-                f"✅ <b>Status:</b> Test end-of-day successful"
-            )
-        elif notification_type == "errors":
-            success = telegram_notifier.send_message_sync(
-                f"🧪 <b>Test: {description}</b>\n\n"
-                f"📅 <b>Time:</b> {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
-                f"❌ <b>Error:</b> This is a test error message\n"
-                f"🔧 <b>Type:</b> Test Error"
-            )
-        elif notification_type == "device_status":
-            success = telegram_notifier.send_message_sync(
-                f"🧪 <b>Test: {description}</b>\n\n"
-                f"📅 <b>Time:</b> {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
-                f"📱 <b>Device:</b> 1\n"
-                f"✅ <b>Status:</b> Connected\n"
-                f"📝 <b>Details:</b> Test connection successful"
-            )
-        
-        if success:
-            print(f"   ✅ {description} sent successfully")
-        else:
-            print(f"   ❌ {description} failed to send")
+    print("   Testing data push notification...")
+    success = telegram_notifier.send_message_sync(
+        f"🧪 <b>Test: {telegram_notifier.system_name} - Data Push</b>\n\n"
+        f"📅 <b>Time:</b> {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
+        f"📊 <b>Records:</b> 5 (Device: 1)\n"
+        f"✅ <b>Status:</b> Test data push successful"
+    )
+    if success:
+        print("   ✅ Data push notification sent successfully")
+    else:
+        print("   ❌ Data push notification failed to send")
+    
+    print("   Testing end-of-day notification...")
+    success = telegram_notifier.send_message_sync(
+        f"🧪 <b>Test: {telegram_notifier.system_name} - End-of-Day</b>\n\n"
+        f"📅 <b>Time:</b> {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
+        f"📱 <b>Device:</b> 1\n"
+        f"📊 <b>Records:</b> 10\n"
+        f"✅ <b>Status:</b> Test end-of-day successful"
+    )
+    if success:
+        print("   ✅ End-of-day notification sent successfully")
+    else:
+        print("   ❌ End-of-day notification failed to send")
+    
+    print("   Testing error notification...")
+    success = telegram_notifier.send_message_sync(
+        f"🧪 <b>Test: {telegram_notifier.system_name} - Error Alert</b>\n\n"
+        f"📅 <b>Time:</b> {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
+        f"🔧 <b>Type:</b> Test Error (Device: 1)\n"
+        f"📝 <b>Message:</b> This is a test error message"
+    )
+    if success:
+        print("   ✅ Error notification sent successfully")
+    else:
+        print("   ❌ Error notification failed to send")
+    
+    print("   Testing device status notification...")
+    success = telegram_notifier.send_message_sync(
+        f"🧪 <b>Test: {telegram_notifier.system_name} - Device Status</b>\n\n"
+        f"📅 <b>Time:</b> {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
+        f"🔧 <b>Device:</b> 1\n"
+        f"✅ <b>Status:</b> Connected\n"
+        f"📝 <b>Details:</b> Test connection successful"
+    )
+    if success:
+        print("   ✅ Device status notification sent successfully")
+    else:
+        print("   ❌ Device status notification failed to send")
     
     print()
     print("🎉 Telegram bot test completed!")

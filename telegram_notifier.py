@@ -10,11 +10,12 @@ class TelegramNotifier:
     Telegram bot notifier for attendance system status updates.
     """
     
-    def __init__(self, bot_token: str, chat_id: str, enabled: bool = True, notification_settings: Optional[Dict[str, bool]] = None):
+    def __init__(self, bot_token: str, chat_id: str, enabled: bool = True, notification_settings: Optional[Dict[str, bool]] = None, system_name: str = "Attendance System"):
         self.bot_token = bot_token
         self.chat_id = chat_id
         self.enabled = enabled
         self.notification_settings = notification_settings or {}
+        self.system_name = system_name
         self.base_url = f"https://api.telegram.org/bot{bot_token}"
         self.logger = logging.getLogger('AttendanceZTech.Telegram')
         
@@ -77,7 +78,7 @@ class TelegramNotifier:
             return False
             
         message = f"""
-🚀 <b>Attendance ZTech System Started</b>
+🚀 <b>{self.system_name} Started</b>
 
 📅 <b>Time:</b> {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
 📱 <b>Devices:</b> {device_count}
@@ -96,7 +97,7 @@ class TelegramNotifier:
         status_text = "Successfully" if success else "Failed to"
         
         message = f"""
-🌅 <b>End-of-Day Data Push</b>
+🌅 <b>{self.system_name} - End-of-Day Data Push</b>
 
 📅 <b>Time:</b> {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
 📱 <b>Device:</b> {device_id}
@@ -115,7 +116,7 @@ class TelegramNotifier:
         device_info = f" (Device: {device_id})" if device_id else ""
         
         message = f"""
-📦 <b>Data Push Notification</b>
+📦 <b>{self.system_name} - Data Push Notification</b>
 
 📅 <b>Time:</b> {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
 📊 <b>Records:</b> {record_count}{device_info}
@@ -131,7 +132,7 @@ class TelegramNotifier:
         device_info = f" (Device: {device_id})" if device_id else ""
         
         message = f"""
-❌ <b>Error Alert</b>
+❌ <b>{self.system_name} - Error Alert</b>
 
 📅 <b>Time:</b> {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
 🔧 <b>Type:</b> {error_type}{device_info}
@@ -147,7 +148,7 @@ class TelegramNotifier:
         status_emoji = "✅" if "success" in status.lower() or "connected" in status.lower() else "⚠️"
         
         message = f"""
-📱 <b>Device Status Update</b>
+📱 <b>{self.system_name} - Device Status Update</b>
 
 📅 <b>Time:</b> {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
 🔧 <b>Device:</b> {device_id}
@@ -164,7 +165,7 @@ class TelegramNotifier:
         success_rate = (successful_pushes / (successful_pushes + failed_pushes) * 100) if (successful_pushes + failed_pushes) > 0 else 0
         
         message = f"""
-📊 <b>Daily Summary Report</b>
+📊 <b>{self.system_name} - Daily Summary Report</b>
 
 📅 <b>Date:</b> {datetime.now().strftime('%Y-%m-%d')}
 📈 <b>Total Records:</b> {total_records}
@@ -186,5 +187,5 @@ class TelegramNotifier:
         if not self.enabled or not self.bot_token or not self.chat_id:
             return False
             
-        test_message = f"🧪 <b>Test Message</b>\n\n📅 {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n✅ Telegram bot is working correctly!"
+        test_message = f"🧪 <b>{self.system_name} - Test Message</b>\n\n📅 {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n✅ Telegram bot is working correctly!"
         return self.send_message_sync(test_message)
