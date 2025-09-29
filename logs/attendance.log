@@ -165,3 +165,115 @@ Working Directory: /Users/hashiqvh/Projects/attendance-ztech-python
 2025-09-29 08:18:31 - INFO - Device 3 (10.30.141.5:4370) - Disconnected from real-time capture
 2025-09-29 08:18:31 - INFO - 🔄 Terminating all device processes...
 2025-09-29 08:18:31 - INFO - 👋 Attendance ZTech System stopped
+2025-09-29 08:20:18 - INFO - 👤 New attendance: User 35 at 2025-09-29 08:18:24 (Device: 1)
+2025-09-29 08:20:18 - INFO - 📦 Buffer limit reached (3 records), pushing to server...
+2025-09-29 08:20:18 - INFO - Pushing 3 records to server at https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 08:20:19 - INFO - ✅ Successfully pushed 3 records to server
+2025-09-29 08:22:22 - INFO - 🔄 Scheduled reconnection after 15 minutes...
+2025-09-29 08:22:22 - INFO - 🔄 Reconnecting to all devices...
+2025-09-29 08:22:22 - INFO - 🔄 Starting process for device 1
+2025-09-29 08:22:22 - INFO - ✅ Process started for device 1 (PID: 98207)
+2025-09-29 08:22:22 - INFO - 🔄 Starting process for device 2
+2025-09-29 08:22:22 - INFO - ✅ Process started for device 2 (PID: 98208)
+2025-09-29 08:22:22 - INFO - 🔄 Starting process for device 3
+2025-09-29 08:22:22 - INFO - ✅ Process started for device 3 (PID: 98209)
+2025-09-29 08:22:22 - INFO - ✅ All 3 device processes started successfully
+2025-09-29 08:22:22 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-09-29 08:22:22.262766
+Python Version: 3.13.2 (main, Feb  4 2025, 14:51:09) [Clang 16.0.0 (clang-1600.0.26.6)]
+Working Directory: /Users/hashiqvh/Projects/attendance-ztech-python
+=====================================
+
+2025-09-29 08:22:22 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-09-29 08:22:22.263214
+Python Version: 3.13.2 (main, Feb  4 2025, 14:51:09) [Clang 16.0.0 (clang-1600.0.26.6)]
+Working Directory: /Users/hashiqvh/Projects/attendance-ztech-python
+=====================================
+
+2025-09-29 08:22:22 - INFO - Configuration loaded successfully
+2025-09-29 08:22:22 - INFO - Configuration loaded successfully
+2025-09-29 08:22:22 - INFO - System configured with 3 devices
+2025-09-29 08:22:22 - INFO - Server endpoint: https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 08:22:22 - INFO - Buffer limit: 3
+2025-09-29 08:22:22 - INFO - Telegram notifications: Enabled
+2025-09-29 08:22:22 - INFO - System configured with 3 devices
+2025-09-29 08:22:22 - INFO - Server endpoint: https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 08:22:22 - INFO - Buffer limit: 3
+2025-09-29 08:22:22 - INFO - Telegram notifications: Enabled
+2025-09-29 08:22:22 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-09-29 08:22:22.264602
+Python Version: 3.13.2 (main, Feb  4 2025, 14:51:09) [Clang 16.0.0 (clang-1600.0.26.6)]
+Working Directory: /Users/hashiqvh/Projects/attendance-ztech-python
+=====================================
+
+2025-09-29 08:22:22 - INFO - Configuration loaded successfully
+2025-09-29 08:22:22 - INFO - System configured with 3 devices
+2025-09-29 08:22:22 - INFO - Server endpoint: https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 08:22:22 - INFO - Buffer limit: 3
+2025-09-29 08:22:22 - INFO - Telegram notifications: Enabled
+2025-09-29 08:22:22 - INFO - 🔄 Starting real-time log capture for device 2 (10.30.141.4:4370)
+2025-09-29 08:22:22 - INFO - 🔄 Starting real-time log capture for device 1 (10.30.141.3:4370)
+2025-09-29 08:22:22 - INFO - 🔄 Starting real-time log capture for device 3 (10.30.141.5:4370)
+2025-09-29 08:22:22 - INFO - Device 1 (10.30.141.3:4370) - Connecting for real-time capture...
+2025-09-29 08:22:22 - INFO - Device 3 (10.30.141.5:4370) - Connecting for real-time capture...
+2025-09-29 08:22:22 - INFO - Device 2 (10.30.141.4:4370) - Connecting for real-time capture...
+2025-09-29 08:22:22 - INFO - Device 1 (10.30.141.3:4370) - Connected successfully - Real-time capture active
+2025-09-29 08:22:22 - INFO - 📱 Device 1 connected (device info not available)
+2025-09-29 08:22:22 - INFO - Device 2 (10.30.141.4:4370) - Connected successfully - Real-time capture active
+2025-09-29 08:22:22 - INFO - 📱 Device 2 connected (device info not available)
+2025-09-29 08:22:22 - INFO - Device 3 (10.30.141.5:4370) - Connected successfully - Real-time capture active
+2025-09-29 08:22:22 - INFO - 📱 Device 3 connected (device info not available)
+2025-09-29 08:37:22 - INFO - 🔄 Scheduled reconnection after 15 minutes...
+2025-09-29 08:37:22 - INFO - 🔄 Reconnecting to all devices...
+2025-09-29 08:37:22 - INFO - 🔄 Starting process for device 1
+2025-09-29 08:37:22 - INFO - ✅ Process started for device 1 (PID: 26997)
+2025-09-29 08:37:22 - INFO - 🔄 Starting process for device 2
+2025-09-29 08:37:22 - INFO - ✅ Process started for device 2 (PID: 26998)
+2025-09-29 08:37:22 - INFO - 🔄 Starting process for device 3
+2025-09-29 08:37:22 - INFO - ✅ Process started for device 3 (PID: 26999)
+2025-09-29 08:37:22 - INFO - ✅ All 3 device processes started successfully
+2025-09-29 08:37:22 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-09-29 08:37:22.319661
+Python Version: 3.13.2 (main, Feb  4 2025, 14:51:09) [Clang 16.0.0 (clang-1600.0.26.6)]
+Working Directory: /Users/hashiqvh/Projects/attendance-ztech-python
+=====================================
+
+2025-09-29 08:37:22 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-09-29 08:37:22.319658
+Python Version: 3.13.2 (main, Feb  4 2025, 14:51:09) [Clang 16.0.0 (clang-1600.0.26.6)]
+Working Directory: /Users/hashiqvh/Projects/attendance-ztech-python
+=====================================
+
+2025-09-29 08:37:22 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-09-29 08:37:22.319661
+Python Version: 3.13.2 (main, Feb  4 2025, 14:51:09) [Clang 16.0.0 (clang-1600.0.26.6)]
+Working Directory: /Users/hashiqvh/Projects/attendance-ztech-python
+=====================================
+
+2025-09-29 08:37:22 - INFO - Configuration loaded successfully
+2025-09-29 08:37:22 - INFO - Configuration loaded successfully
+2025-09-29 08:37:22 - INFO - Configuration loaded successfully
+2025-09-29 08:37:22 - INFO - System configured with 3 devices
+2025-09-29 08:37:22 - INFO - System configured with 3 devices
+2025-09-29 08:37:22 - INFO - System configured with 3 devices
+2025-09-29 08:37:22 - INFO - Server endpoint: https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 08:37:22 - INFO - Server endpoint: https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 08:37:22 - INFO - Server endpoint: https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 08:37:22 - INFO - Buffer limit: 3
+2025-09-29 08:37:22 - INFO - Buffer limit: 3
+2025-09-29 08:37:22 - INFO - Buffer limit: 3
+2025-09-29 08:37:22 - INFO - Telegram notifications: Enabled
+2025-09-29 08:37:22 - INFO - Telegram notifications: Enabled
+2025-09-29 08:37:22 - INFO - Telegram notifications: Enabled
+2025-09-29 08:37:22 - INFO - 🔄 Starting real-time log capture for device 2 (10.30.141.4:4370)
+2025-09-29 08:37:22 - INFO - 🔄 Starting real-time log capture for device 3 (10.30.141.5:4370)
+2025-09-29 08:37:22 - INFO - 🔄 Starting real-time log capture for device 1 (10.30.141.3:4370)
+2025-09-29 08:37:22 - INFO - Device 2 (10.30.141.4:4370) - Connecting for real-time capture...
+2025-09-29 08:37:22 - INFO - Device 3 (10.30.141.5:4370) - Connecting for real-time capture...
+2025-09-29 08:37:22 - INFO - Device 1 (10.30.141.3:4370) - Connecting for real-time capture...
+2025-09-29 08:37:22 - INFO - Device 2 (10.30.141.4:4370) - Connected successfully - Real-time capture active
+2025-09-29 08:37:22 - INFO - 📱 Device 2 connected (device info not available)
+2025-09-29 08:37:22 - INFO - Device 1 (10.30.141.3:4370) - Connected successfully - Real-time capture active
+2025-09-29 08:37:22 - INFO - 📱 Device 1 connected (device info not available)
+2025-09-29 08:37:22 - INFO - Device 3 (10.30.141.5:4370) - Connected successfully - Real-time capture active
+2025-09-29 08:37:22 - INFO - 📱 Device 3 connected (device info not available)
