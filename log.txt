@@ -323,3 +323,231 @@ CWD: /Users/hashiqvh/Projects/attendance-ztech-python
 2025-09-29 08:52:22 - INFO - ℹ️ Device 3 connected (info unavailable)
 2025-09-29 08:52:22 - INFO - Device 2 (10.30.141.4:4370) - Connected - Real-time capture active
 2025-09-29 08:52:22 - INFO - ℹ️ Device 2 connected (info unavailable)
+2025-09-29 08:53:23 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 08:53:23 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 08:53:23 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 08:53:23 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 08:53:23 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 08:53:23 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 08:53:23 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 08:53:23 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 08:53:23 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 08:54:23 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 08:54:23 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 08:54:23 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 08:54:23 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 08:54:23 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 08:54:23 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 08:54:23 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 08:54:23 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 08:54:23 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 08:55:24 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 08:55:24 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 08:55:24 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 08:55:24 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 08:55:24 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 08:55:24 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 08:55:24 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 08:55:24 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 08:55:24 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 08:56:25 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 08:56:25 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 08:56:25 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 08:56:25 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 08:56:25 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 08:56:25 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 08:56:25 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 08:56:25 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 08:56:25 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 08:57:25 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 08:57:25 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 08:57:25 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 08:57:25 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 08:57:25 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 08:57:25 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 08:57:25 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 08:57:25 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 08:57:25 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 08:58:26 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 08:58:26 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 08:58:26 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 08:58:26 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 08:58:26 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 08:58:26 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 08:58:26 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 08:58:26 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 08:58:26 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 08:59:26 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 08:59:26 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 08:59:26 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 08:59:26 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 08:59:26 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 08:59:27 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 08:59:27 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 08:59:27 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 08:59:27 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 09:00:27 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 09:00:27 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 09:00:27 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 09:00:27 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 09:00:27 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 09:00:27 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 09:00:27 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 09:00:27 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 09:00:27 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 09:01:28 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 09:01:28 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 09:01:28 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 09:01:28 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 09:01:28 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 09:01:28 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 09:01:28 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 09:01:28 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 09:01:28 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 09:02:29 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 09:02:29 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 09:02:29 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 09:02:29 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 09:02:29 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 09:02:29 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 09:02:29 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 09:02:29 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 09:02:29 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 09:03:29 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 09:03:29 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 09:03:29 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 09:03:29 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 09:03:29 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 09:03:29 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 09:03:29 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 09:03:29 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 09:03:29 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 09:04:30 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 09:04:30 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 09:04:30 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 09:04:30 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 09:04:30 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 09:04:30 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 09:04:30 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 09:04:30 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 09:04:30 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 09:05:30 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 09:05:30 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 09:05:31 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 09:05:31 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 09:05:31 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 09:05:31 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 09:05:31 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 09:05:31 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 09:05:31 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 09:06:31 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 09:06:31 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 09:06:31 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 09:06:31 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 09:06:31 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 09:06:31 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 09:06:31 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 09:06:31 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 09:06:31 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 09:07:22 - INFO - 🔄 Scheduled reconnection after 15 minutes...
+2025-09-29 09:07:22 - INFO - 🔄 Reconnecting to all devices...
+2025-09-29 09:07:22 - INFO - 🔄 Starting process for device 1
+2025-09-29 09:07:22 - INFO - ✅ Process started for device 1 (PID: 84510)
+2025-09-29 09:07:22 - INFO - 🔄 Starting process for device 2
+2025-09-29 09:07:22 - INFO - ✅ Process started for device 2 (PID: 84511)
+2025-09-29 09:07:22 - INFO - 🔄 Starting process for device 3
+2025-09-29 09:07:22 - INFO - ✅ Process started for device 3 (PID: 84512)
+2025-09-29 09:07:22 - INFO - ✅ All 3 device processes started successfully
+2025-09-29 09:07:22 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-09-29 09:07:22.886426
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-09-29 09:07:22 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-09-29 09:07:22.886489
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-09-29 09:07:22 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-09-29 09:07:22.886557
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-09-29 09:07:22 - INFO - Configured devices: 3 | Endpoint: https://pace.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-09-29 09:07:22 - INFO - Configured devices: 3 | Endpoint: https://pace.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-09-29 09:07:22 - INFO - Configured devices: 3 | Endpoint: https://pace.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-09-29 09:07:22 - INFO - 🔌 Starting RT capture for device 2 (10.30.141.4:4370)
+2025-09-29 09:07:22 - INFO - 🔌 Starting RT capture for device 1 (10.30.141.3:4370)
+2025-09-29 09:07:22 - INFO - 🔌 Starting RT capture for device 3 (10.30.141.5:4370)
+2025-09-29 09:07:22 - INFO - Device 2 (10.30.141.4:4370) - Connecting for RT capture...
+2025-09-29 09:07:22 - INFO - Device 1 (10.30.141.3:4370) - Connecting for RT capture...
+2025-09-29 09:07:22 - INFO - Device 3 (10.30.141.5:4370) - Connecting for RT capture...
+2025-09-29 09:07:22 - INFO - Device 2 (10.30.141.4:4370) - Connected - Real-time capture active
+2025-09-29 09:07:22 - INFO - ℹ️ Device 2 connected (info unavailable)
+2025-09-29 09:07:22 - INFO - Device 1 (10.30.141.3:4370) - Connected - Real-time capture active
+2025-09-29 09:07:22 - INFO - ℹ️ Device 1 connected (info unavailable)
+2025-09-29 09:07:22 - INFO - Device 3 (10.30.141.5:4370) - Connected - Real-time capture active
+2025-09-29 09:07:22 - INFO - ℹ️ Device 3 connected (info unavailable)
+2025-09-29 09:08:23 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 09:08:23 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 09:08:23 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 09:08:23 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 09:08:23 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 09:08:23 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 09:08:23 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 09:08:23 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 09:08:23 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 09:09:24 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 09:09:24 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 09:09:24 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 09:09:24 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 09:09:24 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 09:09:24 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 09:09:24 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 09:09:24 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 09:09:24 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 09:10:24 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 09:10:24 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 09:10:24 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 09:10:24 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 09:10:24 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 09:10:24 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 09:10:24 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 09:10:24 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 09:10:24 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 09:11:25 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 09:11:25 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 09:11:25 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 09:11:25 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 09:11:25 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 09:11:25 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 09:11:25 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 09:11:25 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 09:11:25 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 09:12:26 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 09:12:26 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 09:12:26 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 09:12:26 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 09:12:26 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 09:12:26 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 09:12:26 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 09:12:26 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 09:12:26 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 09:13:26 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 09:13:26 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 09:13:26 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 09:13:26 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 09:13:26 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 09:13:26 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 09:13:26 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 09:13:26 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 09:13:26 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 09:14:27 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 09:14:27 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 09:14:27 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 09:14:27 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 09:14:27 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 09:14:27 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable
+2025-09-29 09:14:27 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 09:14:27 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 09:14:27 - ERROR - ❌ Push error: Object of type ListProxy is not JSON serializable

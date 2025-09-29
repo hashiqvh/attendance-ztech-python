@@ -4,6 +4,7 @@ import json
 import os
 import sys
 from multiprocessing import Process, Manager
+from multiprocessing.managers import BaseProxy
 from datetime import datetime, date, timedelta
 import time
 from zk import ZK
@@ -166,6 +167,34 @@ def tg_send_safe(html_text: str, retries=3, backoff_s=2):
             time.sleep(backoff_s * (i + 1))
 
 # =========================
+# JSON/proxy conversion
+# =========================
+
+def _to_plain(obj):
+    """
+    Deep-convert Manager proxies (ListProxy/DictProxy etc.), tuples, and datetimes
+    into plain JSON-serializable Python types.
+    """
+    # Proxy -> list/dict/str
+    if isinstance(obj, BaseProxy):
+        # try list-like first
+        try:
+            obj = list(obj)
+        except Exception:
+            try:
+                obj = dict(obj)
+            except Exception:
+                return str(obj)
+
+    if isinstance(obj, dict):
+        return {k: _to_plain(v) for k, v in obj.items()}
+    if isinstance(obj, (list, tuple)):
+        return [_to_plain(x) for x in obj]
+    if isinstance(obj, (datetime, date)):
+        return obj.isoformat()
+    return obj
+
+# =========================
 # Logging helpers
 # =========================
 
@@ -182,25 +211,26 @@ def log_device_status(device, status, details=""):
 def push_to_server(attendance_buffer, device_id=None):
     """
     Push attendance data to the server.
-    attendance_buffer can be a Manager().list() or a normal list.
-    On success, it clears the buffer in-place ([:] = []) if it is mutable.
+    Accepts Manager().list() or a normal list.
+    - Deep-converts any proxies/nested proxies to plain types.
+    - Clears buffer in-place only on success.
     """
-    if not attendance_buffer:
+    # Materialize to a plain list of dicts (handles ListProxy + nested proxies)
+    records_plain = _to_plain(attendance_buffer)
+    if not records_plain:
         return True
 
-    # Copy out to avoid holding shared list during IO
-    if hasattr(attendance_buffer, "__iter__"):
-        data_copy = list(attendance_buffer)
-    else:
-        data_copy = attendance_buffer
-
-    payload = {"Json": data_copy}
-    record_count = len(data_copy)
+    payload = {"Json": records_plain}
+    record_count = len(records_plain)
 
     logger.info(f"Pushing {record_count} records to {ENDPOINT}")
     try:
         with httpx.Client(timeout=50) as client:
-            resp = client.post(ENDPOINT, json=payload, headers={"Content-Type": "application/json"})
+            resp = client.post(
+                ENDPOINT,
+                json=payload,  # already plain JSON-ables
+                headers={"Content-Type": "application/json"},
+            )
         if resp.status_code == 200:
             logger.info(f"✅ Push success ({record_count} records)")
             tg_send_safe(
@@ -211,12 +241,11 @@ def push_to_server(attendance_buffer, device_id=None):
             )
             # Clear only after success
             try:
-                if hasattr(attendance_buffer, "clear"):
-                    attendance_buffer.clear()
-                else:
+                if isinstance(attendance_buffer, BaseProxy):
                     attendance_buffer[:] = []
+                else:
+                    attendance_buffer.clear()
             except Exception:
-                # fallback no-op if immutable
                 pass
             return True
         else:
