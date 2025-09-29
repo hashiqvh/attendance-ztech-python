@@ -200,6 +200,7 @@ def end_of_day_task():
         fetch_end_of_day_logs(device)
     logger.info("🌅 End-of-day log fetching completed for all devices")
 
+
 def capture_real_time_logs(device, shared_buffer):
     """
     Capture real-time attendance logs from a device.
@@ -258,7 +259,10 @@ def capture_real_time_logs(device, shared_buffer):
                 conn.disconnect()
                 log_device_status(device, "Disconnected from real-time capture")
         except Exception as disconnect_error:
-            logger.warning(f"⚠️ Failed to disconnect from {device_id}: {disconnect_error}")
+            logging.warning(
+                f"Failed to disconnect from device {device['device_id']}: {disconnect_error}"
+            )
+
 
 def reconnect_devices(shared_buffer):
     """
