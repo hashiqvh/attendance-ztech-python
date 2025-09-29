@@ -1,162 +1,144 @@
-# Real-Time Attendance Logger
+# Attendance ZTech System for Windows
 
-This project captures real-time attendance logs from ZK devices and pushes the data to a server. It also fetches and processes end-of-day attendance logs. The configuration is managed using a JSON file.
+A comprehensive attendance management system that connects to ZKTeco devices and syncs attendance data to a server.
 
----
+## 🚀 Quick Start
 
-## Features
+### 1. Install Python
+- Download Python 3.7+ from [python.org](https://www.python.org/downloads/)
+- **Important**: Check "Add Python to PATH" during installation
 
-- Captures real-time attendance logs from multiple devices.
-- Pushes logs to a server endpoint in JSON format.
-- Fetches end-of-day attendance logs.
-- Automatically reconnects to devices every 15 minutes to ensure data capture.
-- Configurable via `config.json`.
+### 2. Install the System
+- Right-click `install_service.bat` and select "Run as administrator"
+- The script will automatically:
+  - Install Python dependencies
+  - Set up Windows service
+  - Create desktop shortcuts
+  - Start the system
 
----
+## 📁 System Files
 
-## Requirements
+- `main.py` - Main attendance system
+- `config.json` - Device and server configuration
+- `windows_service.py` - Windows service wrapper
+- `install_service.bat` - Installation script
+- `view_logs.bat` - Log viewer and device status
+- `requirements.txt` - Python dependencies
 
-- **Python**: Version 3.8 or later
-- **ZK SDK**: For device communication (`zk-python`)
-- **Additional Libraries**: Listed in `requirements.txt`
+## 🔧 Configuration
 
----
-
-## Installation
-
-### Step 1: Clone the Repository
-
-```bash
-git clone https://github.com/yourusername/attendance-logger.git
-cd attendance-logger
-```
-
-### Step 2: Set Up a Virtual Environment
-
-Create and activate a virtual environment to isolate the dependencies for this project.
-
-#### On Linux / macOS:
-
-```bash
-python3 -m venv venv
-source venv/bin/activate
-```
-
-#### On Windows:
-
-```bash
-python -m venv venv
-venv\Scripts\activate
-```
-
-### Step 3: Install Dependencies
-
-Install all required Python libraries:
-
-```bash
-pip install -r requirements.txt
-```
-
-### Step 4: Configure `config.json`
-
-Create the `config.json` file in the project root directory using the following sample:
-
-#### Sample `config.json`
+Edit `config.json` to configure your devices and server:
 
 ```json
 {
-  "log_level": "INFO",
-  "endpoint": "https://example.com/erp-api/sync/empAttSync.php",
-  "buffer_limit": 3,
+  "endpoint": "http://your-server.com/api/attendance",
+  "buffer_limit": 100,
   "devices": [
-    { "device_id": 1, "ip_address": "10.30.141.3", "port": 4370 },
-    { "device_id": 2, "ip_address": "10.30.141.4", "port": 4370 },
-    { "device_id": 3, "ip_address": "10.30.141.5", "port": 4370 }
-  ]
+    {
+      "device_id": "Device001",
+      "ip_address": "192.168.1.100",
+      "port": 4370
+    }
+  ],
+  "log_level": "INFO"
 }
 ```
 
-#### Configuration Details:
+## 📊 Monitoring and Logs
 
-- **`log_level`**: Logging level (`DEBUG`, `INFO`, `WARNING`, `ERROR`, `CRITICAL`).
-- **`endpoint`**: Server API endpoint for syncing attendance data.
-- **`buffer_limit`**: Number of logs to collect before pushing to the server.
-- **`devices`**: List of devices with:
-  - `device_id`: Unique identifier for the device.
-  - `ip_address`: IP address of the device.
-  - `port`: Port for communication (default is `4370`).
+### View Logs and Device Status
+- Double-click "View Logs" desktop shortcut, or
+- Run `C:\Program Files\AttendanceZTech\view_logs.bat`
 
----
+### Log Locations
+- **System logs**: `C:\ProgramData\AttendanceZTech\logs\`
+- **Desktop logs**: `Desktop\AttendanceZTech Logs\`
+- **Local log**: `log.txt` (in program directory)
 
-## Usage
+### What You Can Monitor
+1. **Device Connection Status** - See if devices are connected
+2. **Recent Attendance Logs** - View latest attendance records
+3. **System Service Status** - Check if service is running
+4. **Live Log Monitor** - Real-time log viewing
+5. **All Logs** - Comprehensive log review
 
-### Running the Script
+## 🔄 Windows Service
 
-1. Activate the virtual environment:
+The system runs as a Windows service that:
+- Starts automatically on Windows boot
+- Restarts automatically if it crashes
+- Runs in the background
+- Logs all activities
 
-   ```bash
-   source venv/bin/activate       # On Linux/macOS
-   venv\Scripts\activate        # On Windows
-   ```
+### Service Management
+```cmd
+# Start service
+net start AttendanceZTechService
 
-2. Run the script:
-   ```bash
-   python main.py
-   ```
+# Stop service
+net stop AttendanceZTechService
 
----
-
-## Logs
-
-Logs are printed to the console with timestamps and log levels. Example:
-
-```
-2025-01-22 13:45:23 - INFO - Connecting to device 1...
-2025-01-22 13:45:30 - INFO - Captured log: {'device_id': 1, 'user_id': 123, 'timestamp': '2025-01-22 13:45:30', 'status': 1, 'punch': 1}
-2025-01-22 13:46:00 - INFO - Pushing 3 records to the server.
+# Check status
+sc query AttendanceZTechService
 ```
 
----
+## 📱 Desktop Shortcuts
 
-## Features in Detail
+After installation, you'll have:
+- **Attendance ZTech** - Start the system manually
+- **View Logs** - Check logs and device status
 
-### Real-Time Log Capture
+## 🚨 Troubleshooting
 
-- Real-time logs are captured and stored in a shared buffer.
-- Logs are pushed to the server when the buffer reaches the `buffer_limit`.
+### System Won't Start
+1. Check if Python is installed: `python --version`
+2. Run `install_service.bat` as administrator
+3. Check Windows Event Viewer for errors
 
-### End-of-Day Task
+### Can't See Logs
+1. Check `Desktop\AttendanceZTech Logs\` folder
+2. Run `view_logs.bat` to see all logs
+3. Check Windows service status
 
-- The script fetches logs for the current day at the end of the day (`23:59`).
-- Ensures all attendance data is pushed before the next day starts.
+### Device Connection Issues
+1. Verify device IP and port in `config.json`
+2. Check network connectivity
+3. Ensure device is powered on and accessible
 
-### Reconnection Mechanism
+### Service Issues
+1. Run as administrator
+2. Check Windows Event Viewer
+3. Reinstall service: `python windows_service.py remove` then reinstall
 
-- Devices are reconnected every 15 minutes to handle disconnections.
-- This ensures continuous data collection without manual intervention.
+## 📋 System Features
 
----
+- **Real-time attendance capture** from ZKTeco devices
+- **Automatic data synchronization** to server
+- **End-of-day log fetching** for complete data
+- **Automatic reconnection** every 15 minutes
+- **Comprehensive logging** with multiple outputs
+- **Windows service** for reliability
+- **Auto-startup** on system boot
+- **Easy log viewing** with dedicated tools
 
-## Development and Testing
+## 🔍 Log Types
 
-### Running Tests
+- **Service logs** - Windows service operations
+- **Attendance logs** - Device connection and attendance data
+- **Error logs** - Connection issues and errors
+- **System logs** - General system information
 
-Write and run unit tests for the script using the `unittest` module or your preferred testing framework.
+## 📞 Support
 
-### Modifying Configuration
+If you encounter issues:
+1. Check the logs using `view_logs.bat`
+2. Verify Python and dependencies are installed
+3. Ensure you're running as administrator
+4. Check Windows Event Viewer for system errors
 
-Update the `config.json` file to:
+## 🆕 Updates
 
-- Add new devices.
-- Change the endpoint URL.
-- Adjust the buffer limit or logging level.
-
----
-
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
-
----
-
-**Author:** [Hashiq V H]
+To update the system:
+1. Replace the files in your installation folder
+2. Run `install_service.bat` again as administrator
+3. The service will be updated automatically

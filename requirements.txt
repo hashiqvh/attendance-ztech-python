@@ -1,2 +1,5 @@
-pyzk
-httpx
+pyzk>=0.9
+httpx>=0.24.0
+pywin32>=306
+psutil>=5.9.0
+colorama>=0.4.0
