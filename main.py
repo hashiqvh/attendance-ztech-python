@@ -9,12 +9,13 @@ import time
 from zk import ZK
 import httpx
 from pathlib import Path
+from telegram_notifier import TelegramNotifier
 
 # Create comprehensive logging setup
 def setup_logging():
-    """Setup comprehensive logging for Windows service environment"""
+    """Setup comprehensive logging for cross-platform environment"""
     # Create log directories
-    log_dir = Path("C:/ProgramData/AttendanceZTech/logs")
+    log_dir = Path("logs")
     log_dir.mkdir(parents=True, exist_ok=True)
     
     # Create desktop logs folder for easy access
@@ -84,9 +85,19 @@ ENDPOINT = config["endpoint"]
 BUFFER_LIMIT = config["buffer_limit"]
 DEVICES = config["devices"]
 
+# Initialize Telegram notifier
+telegram_config = config.get("telegram", {})
+telegram_notifier = TelegramNotifier(
+    bot_token=telegram_config.get("bot_token", ""),
+    chat_id=telegram_config.get("chat_id", ""),
+    enabled=telegram_config.get("enabled", False),
+    notification_settings=telegram_config.get("notifications", {})
+)
+
 logger.info(f"System configured with {len(DEVICES)} devices")
 logger.info(f"Server endpoint: {ENDPOINT}")
 logger.info(f"Buffer limit: {BUFFER_LIMIT}")
+logger.info(f"Telegram notifications: {'Enabled' if telegram_notifier.enabled else 'Disabled'}")
 
 def log_device_status(device, status, details=""):
     """Log device connection status with details"""
@@ -95,7 +106,7 @@ def log_device_status(device, status, details=""):
         status_msg += f" - {details}"
     logger.info(status_msg)
 
-def push_to_server(attendance_buffer):
+def push_to_server(attendance_buffer, device_id=None):
     """
     Push attendance data to the server.
     """
@@ -103,7 +114,9 @@ def push_to_server(attendance_buffer):
         payload = {
             "Json": list(attendance_buffer)
         }
-        logger.info(f"Pushing {len(attendance_buffer)} records to server at {ENDPOINT}")
+        record_count = len(attendance_buffer)
+        logger.info(f"Pushing {record_count} records to server at {ENDPOINT}")
+        
         try:
             response = httpx.post(
                 ENDPOINT,
@@ -112,14 +125,37 @@ def push_to_server(attendance_buffer):
                 timeout=50,
             )
             if response.status_code == 200:
-                logger.info(f"✅ Successfully pushed {len(attendance_buffer)} records to server")
+                logger.info(f"✅ Successfully pushed {record_count} records to server")
+                # Send Telegram notification for successful push
+                telegram_notifier.send_message_sync(
+                    f"📦 <b>Data Push Success</b>\n\n"
+                    f"📅 <b>Time:</b> {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
+                    f"📊 <b>Records:</b> {record_count}\n"
+                    f"✅ <b>Status:</b> Successfully pushed to server"
+                )
                 attendance_buffer[:] = []
                 return True
             else:
                 logger.error(f"❌ Failed to push data. Status: {response.status_code}, Response: {response.text}")
+                # Send Telegram notification for failed push
+                telegram_notifier.send_message_sync(
+                    f"❌ <b>Data Push Failed</b>\n\n"
+                    f"📅 <b>Time:</b> {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
+                    f"📊 <b>Records:</b> {record_count}\n"
+                    f"❌ <b>Status:</b> Failed to push to server\n"
+                    f"🔧 <b>Error:</b> HTTP {response.status_code}"
+                )
                 return False
         except Exception as e:
             logger.error(f"❌ Error pushing data to server: {e}")
+            # Send Telegram notification for error
+            telegram_notifier.send_message_sync(
+                f"❌ <b>Data Push Error</b>\n\n"
+                f"📅 <b>Time:</b> {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
+                f"📊 <b>Records:</b> {record_count}\n"
+                f"❌ <b>Status:</b> Error occurred\n"
+                f"🔧 <b>Error:</b> {str(e)}"
+            )
             return False
     return True
 
@@ -167,12 +203,36 @@ def fetch_end_of_day_logs(device):
                 
                 # Push data to the server
                 if attendance_data:
-                    if push_to_server(attendance_data):
+                    if push_to_server(attendance_data, device['device_id']):
                         logger.info(f"✅ End-of-day logs pushed successfully for device {device['device_id']}")
+                        # Send specific end-of-day notification
+                        telegram_notifier.send_message_sync(
+                            f"🌅 <b>End-of-Day Data Push</b>\n\n"
+                            f"📅 <b>Time:</b> {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
+                            f"📱 <b>Device:</b> {device['device_id']}\n"
+                            f"📊 <b>Records:</b> {len(attendance_data)}\n"
+                            f"✅ <b>Status:</b> Successfully pushed end-of-day data"
+                        )
                     else:
                         logger.error(f"❌ Failed to push end-of-day logs for device {device['device_id']}")
+                        # Send failure notification
+                        telegram_notifier.send_message_sync(
+                            f"❌ <b>End-of-Day Push Failed</b>\n\n"
+                            f"📅 <b>Time:</b> {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
+                            f"📱 <b>Device:</b> {device['device_id']}\n"
+                            f"📊 <b>Records:</b> {len(attendance_data)}\n"
+                            f"❌ <b>Status:</b> Failed to push end-of-day data"
+                        )
                 else:
                     logger.info(f"ℹ️ No logs for {current_date} found for device {device['device_id']}")
+                    # Send notification for no data
+                    telegram_notifier.send_message_sync(
+                        f"ℹ️ <b>No End-of-Day Data</b>\n\n"
+                        f"📅 <b>Time:</b> {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
+                        f"📱 <b>Device:</b> {device['device_id']}\n"
+                        f"📊 <b>Records:</b> 0\n"
+                        f"ℹ️ <b>Status:</b> No attendance data found for today"
+                    )
             else:
                 logger.info(f"ℹ️ No attendance logs found for device {device['device_id']}")
 
@@ -196,8 +256,43 @@ def end_of_day_task():
     Fetch logs from all devices and push them to the server at the end of the day.
     """
     logger.info("🌅 Starting end-of-day log fetching for all devices...")
+    
+    # Send start notification
+    telegram_notifier.send_message_sync(
+        f"🌅 <b>Starting End-of-Day Process</b>\n\n"
+        f"📅 <b>Time:</b> {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
+        f"📱 <b>Devices:</b> {len(DEVICES)}\n"
+        f"🔄 <b>Status:</b> Beginning data collection..."
+    )
+    
+    total_records = 0
+    successful_devices = 0
+    failed_devices = 0
+    
     for device in DEVICES:
-        fetch_end_of_day_logs(device)
+        try:
+            fetch_end_of_day_logs(device)
+            successful_devices += 1
+        except Exception as e:
+            failed_devices += 1
+            logger.error(f"❌ Error in end-of-day task for device {device['device_id']}: {e}")
+            # Send error notification
+            telegram_notifier.send_message_sync(
+                f"❌ <b>Device Error in End-of-Day</b>\n\n"
+                f"📅 <b>Time:</b> {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
+                f"📱 <b>Device:</b> {device['device_id']}\n"
+                f"❌ <b>Error:</b> {str(e)}"
+            )
+    
+    # Send completion summary
+    telegram_notifier.send_message_sync(
+        f"🌅 <b>End-of-Day Process Complete</b>\n\n"
+        f"📅 <b>Time:</b> {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
+        f"✅ <b>Successful Devices:</b> {successful_devices}\n"
+        f"❌ <b>Failed Devices:</b> {failed_devices}\n"
+        f"📊 <b>Total Devices:</b> {len(DEVICES)}"
+    )
+    
     logger.info("🌅 End-of-day log fetching completed for all devices")
 
 
@@ -244,7 +339,7 @@ def capture_real_time_logs(device, shared_buffer):
                     # Push to server if buffer exceeds the limit
                     if len(shared_buffer) >= BUFFER_LIMIT:
                         logger.info(f"📦 Buffer limit reached ({len(shared_buffer)} records), pushing to server...")
-                        push_to_server(shared_buffer)
+                        push_to_server(shared_buffer, device_id)
 
         else:
             log_device_status(device, "Failed to connect", "Connection returned None")
@@ -287,6 +382,16 @@ def main():
     """
     logger.info("🚀 Starting Attendance ZTech System...")
     
+    # Send startup notification
+    telegram_notifier.send_message_sync(
+        f"🚀 <b>Attendance ZTech System Started</b>\n\n"
+        f"📅 <b>Time:</b> {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
+        f"📱 <b>Devices:</b> {len(DEVICES)}\n"
+        f"🌐 <b>Endpoint:</b> {ENDPOINT}\n"
+        f"📦 <b>Buffer Limit:</b> {BUFFER_LIMIT}\n"
+        f"✅ <b>Status:</b> System is now monitoring attendance devices"
+    )
+    
     with Manager() as manager:
         shared_buffer = manager.list()
         logger.info("📦 Shared buffer initialized")
@@ -321,13 +426,34 @@ def main():
                 
         except KeyboardInterrupt:
             logger.info("⏹️ Script terminated by user")
+            # Send shutdown notification
+            telegram_notifier.send_message_sync(
+                f"⏹️ <b>System Shutdown</b>\n\n"
+                f"📅 <b>Time:</b> {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
+                f"👤 <b>Reason:</b> User termination\n"
+                f"🔄 <b>Status:</b> Stopping all processes..."
+            )
         except Exception as e:
             logger.error(f"❌ Unexpected error in main loop: {e}")
+            # Send error notification
+            telegram_notifier.send_message_sync(
+                f"❌ <b>System Error</b>\n\n"
+                f"📅 <b>Time:</b> {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
+                f"❌ <b>Error:</b> {str(e)}\n"
+                f"🔄 <b>Status:</b> System will attempt to continue..."
+            )
         finally:
             logger.info("🔄 Terminating all device processes...")
             for process in processes:
                 process.terminate()
             logger.info("👋 Attendance ZTech System stopped")
+            # Send final shutdown notification
+            telegram_notifier.send_message_sync(
+                f"👋 <b>System Stopped</b>\n\n"
+                f"📅 <b>Time:</b> {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
+                f"🔄 <b>Status:</b> All processes terminated\n"
+                f"📱 <b>Devices:</b> Disconnected"
+            )
 
 if __name__ == "__main__":
     try:

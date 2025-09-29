@@ -1,12 +1,35 @@
 {
-  "endpoint": "https://pcbs.paceeducation.com/erp-api/sync/empAttSync.php",
+  "endpoint": "https://pace.paceeducation.com/erp-api/sync/empAttSync.php",
   "devices": [
     {
       "device_id": 1,
-      "ip_address": "10.40.128.29",
+      "ip_address": "10.30.141.3",
+      "port": 4370
+    },
+    {
+      "device_id": 2,
+      "ip_address": "10.30.141.4",
+      "port": 4370
+    },
+    {
+      "device_id": 3,
+      "ip_address": "10.30.141.5",
       "port": 4370
     }
   ],
   "buffer_limit": 3,
-  "log_level": "INFO"
+  "log_level": "INFO",
+
+  "telegram": {
+    "bot_token": "7985099852:AAFL_aTu4g5pB-3xaKoUVrZy94oWGOa3HfY",
+    "chat_id": "495531116",
+    "enabled": true,
+    "notifications": {
+      "startup": true,
+      "end_of_day": true,
+      "data_push": true,
+      "errors": true,
+      "device_status": true
+    }
+  }
 }
