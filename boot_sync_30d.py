@@ -69,7 +69,7 @@ def ensure_exec(path: str, what: str):
 
 def main():
     # Dates
-    to_date = datetime.date.today()
+    to_date = datetime.date.today()+datetime.timedelta(days=1)
     from_date = to_date - datetime.timedelta(days=30)
 
     # Telegram
