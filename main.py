@@ -168,6 +168,18 @@ def tg_send_safe(html_text: str, retries=3, backoff_s=2):
             logger.error(f"Telegram send failed (attempt {i+1}/{retries}): {e}")
             time.sleep(backoff_s * (i + 1))
 
+def tg_send_with_name(message: str, retries=3, backoff_s=2):
+    """
+    Send a Telegram message with system name prefix.
+    """
+    if not telegram_notifier.enabled:
+        return
+    # Add system name to the message if it's not already there
+    if f"{system_name} -" not in message and "<b>" in message:
+        # Find the first <b> tag and add system name
+        message = message.replace("<b>", f"<b>{system_name} - ", 1)
+    tg_send_safe(message, retries, backoff_s)
+
 # =========================
 # JSON/proxy conversion
 # =========================
@@ -235,7 +247,7 @@ def push_to_server(attendance_buffer, device_id=None):
             )
         if resp.status_code == 200:
             logger.info(f"✅ Push success ({record_count} records)")
-            tg_send_safe(
+            tg_send_with_name(
                 f"✅ <b>Data Push Success</b>\n\n"
                 f"🕒 <b>Time:</b> {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
                 f"🧾 <b>Records:</b> {record_count}\n"
@@ -252,7 +264,7 @@ def push_to_server(attendance_buffer, device_id=None):
             return True
         else:
             logger.error(f"❌ Push failed HTTP {resp.status_code}: {resp.text[:500]}")
-            tg_send_safe(
+            tg_send_with_name(
                 f"❌ <b>Data Push Failed</b>\n\n"
                 f"🕒 <b>Time:</b> {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
                 f"🧾 <b>Records:</b> {record_count}\n"
@@ -261,7 +273,7 @@ def push_to_server(attendance_buffer, device_id=None):
             return False
     except Exception as e:
         logger.error(f"❌ Push error: {e}")
-        tg_send_safe(
+        tg_send_with_name(
             f"❌ <b>Data Push Error</b>\n\n"
             f"🕒 <b>Time:</b> {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
             f"🧾 <b>Records:</b> {record_count}\n"
@@ -321,7 +333,7 @@ def fetch_end_of_day_logs(device):
                 ok = push_to_server(attendance_data, device['device_id'])
                 if ok:
                     logger.info(f"✅ EoD push OK for device {device['device_id']}")
-                    tg_send_safe(
+                    tg_send_with_name(
                         f"🧹 <b>End-of-Day Push</b>\n\n"
                         f"🕒 <b>Time:</b> {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
                         f"🖥️ <b>Device:</b> {device['device_id']}\n"
@@ -330,14 +342,14 @@ def fetch_end_of_day_logs(device):
                     )
                 else:
                     logger.error(f"❌ EoD push failed for device {device['device_id']}")
-                    tg_send_safe(
+                    tg_send_with_name(
                         f"❌ <b>EoD Push Failed</b>\n\n"
                         f"🖥️ <b>Device:</b> {device['device_id']}\n"
                         f"🧾 <b>Records:</b> {len(attendance_data)}"
                     )
             else:
                 logger.info(f"ℹ️ No logs today for device {device['device_id']}")
-                tg_send_safe(
+                tg_send_with_name(
                     f"ℹ️ <b>No EoD Data</b>\n\n"
                     f"🖥️ <b>Device:</b> {device['device_id']}\n"
                     f"🧾 <b>Records:</b> 0"
@@ -355,7 +367,7 @@ def fetch_end_of_day_logs(device):
 
 def end_of_day_task():
     logger.info("🧹 Starting EoD task for all devices...")
-    tg_send_safe(
+    tg_send_with_name(
         f"🧹 <b>Starting End-of-Day</b>\n\n"
         f"🕒 <b>Time:</b> {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
         f"🖥️ <b>Devices:</b> {len(DEVICES)}"
@@ -368,12 +380,12 @@ def end_of_day_task():
         except Exception as e:
             fail += 1
             logger.error(f"❌ EoD task error for device {d['device_id']}: {e}")
-            tg_send_safe(
+            tg_send_with_name(
                 f"❌ <b>Device Error (EoD)</b>\n\n"
                 f"🖥️ <b>Device:</b> {d['device_id']}\n"
                 f"❌ <b>Error:</b> {str(e)}"
             )
-    tg_send_safe(
+    tg_send_with_name(
         f"🧹 <b>EoD Complete</b>\n\n"
         f"✅ <b>OK:</b> {ok}\n"
         f"❌ <b>Failed:</b> {fail}\n"
@@ -503,7 +515,7 @@ def main():
     else:
         logger.info("✅ Ping OK for at least one device")
 
-    tg_send_safe(
+    tg_send_with_name(
         f"🚀 <b>Attendance ZTech Started</b>\n\n"
         f"🕒 <b>Time:</b> {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
         f"🖥️ <b>Devices:</b> {len(DEVICES)}\n"
@@ -553,14 +565,14 @@ def main():
 
         except KeyboardInterrupt:
             logger.info("⏹️ Terminated by user")
-            tg_send_safe(
+            tg_send_with_name(
                 f"⏹️ <b>System Shutdown</b>\n\n"
                 f"🕒 <b>Time:</b> {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
                 f"📝 <b>Reason:</b> KeyboardInterrupt"
             )
         except Exception as e:
             logger.error(f"❌ Unexpected error in main loop: {e}")
-            tg_send_safe(
+            tg_send_with_name(
                 f"❌ <b>System Error</b>\n\n"
                 f"🕒 <b>Time:</b> {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
                 f"❌ <b>Error:</b> {str(e)}"
@@ -575,7 +587,7 @@ def main():
                 push_to_server(shared_buffer)
 
             logger.info("👋 Attendance ZTech stopped")
-            tg_send_safe(
+            tg_send_with_name(
                 f"👋 <b>System Stopped</b>\n\n"
                 f"🕒 <b>Time:</b> {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
                 f"🔌 <b>Status:</b> All processes terminated"

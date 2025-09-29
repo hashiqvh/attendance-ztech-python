@@ -45,6 +45,18 @@ def tg_send_safe(notifier: "TelegramNotifier", html: str, retries: int = 3, back
             logger.error(f"Telegram send failed (attempt {i+1}/{retries}): {e}")
             time.sleep(backoff_s * (i + 1))
 
+def tg_send_with_name(notifier: "TelegramNotifier", message: str, retries: int = 3, backoff_s: int = 2):
+    """
+    Send a Telegram message with system name prefix.
+    """
+    if not notifier or not getattr(notifier, "enabled", False):
+        return
+    # Add system name to the message if it's not already there
+    if f"{notifier.system_name} -" not in message and "<b>" in message:
+        # Find the first <b> tag and add system name
+        message = message.replace("<b>", f"<b>{notifier.system_name} - ", 1)
+    tg_send_safe(notifier, message, retries, backoff_s)
+
 def wait_for_network(max_wait_s: int = 120) -> bool:
     """Wait until DNS & outbound connectivity work (best-effort)."""
     start = time.time()
@@ -118,7 +130,7 @@ def main():
         f"📊 <b>Duration:</b> 30 days\n"
         f"🔄 <b>Status:</b> Starting historical data sync..."
     )
-    tg_send_safe(notifier, start_msg)
+    tg_send_with_name(notifier, start_msg)
 
     start_time = datetime.datetime.now()
     logger.info("Starting 30-day boot sync subprocess...")
@@ -143,7 +155,7 @@ def main():
             )
             logger.info("Boot sync finished successfully.")
             print("Boot sync finished successfully.", flush=True)
-            tg_send_safe(notifier, ok_msg)
+            tg_send_with_name(notifier, ok_msg)
             sys.exit(0)
         except subprocess.CalledProcessError as e:
             last_err = e
@@ -169,7 +181,7 @@ def main():
     )
     print(f"Boot sync failed: {last_err}", flush=True)
     logger.error(f"Boot sync failed after {max_attempts} attempts: {last_err}")
-    tg_send_safe(notifier, err_msg)
+    tg_send_with_name(notifier, err_msg)
     sys.exit(1)
 
 
