@@ -297,7 +297,7 @@ def fetch_end_of_day_logs(device):
             device["ip_address"],
             port=device["port"],
             timeout=100,
-            password=0,
+             password=device.get("password", 0),
             force_udp=False,
             ommit_ping=False,
         )
@@ -410,7 +410,7 @@ def capture_real_time_logs(device, shared_buffer, periodic_flush_s=60):
     last_flush = time.time()
 
     try:
-        zk = ZK(ip_address, port=port, timeout=50)
+        zk = ZK(ip_address, port=port, timeout=50, password=device.get("password", 0))
         log_device_status(device, "Connecting for RT capture...")
         conn = zk.connect()
         if not conn:

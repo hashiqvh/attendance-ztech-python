@@ -738,3 +738,971 @@ CWD: /Users/hashiqvh/Projects/attendance-ztech-python
 2025-09-29 09:52:24 - INFO - ℹ️ Device 2 connected (info unavailable)
 2025-09-29 09:52:24 - INFO - Device 3 (10.30.141.5:4370) - Connected - Real-time capture active
 2025-09-29 09:52:24 - INFO - ℹ️ Device 3 connected (info unavailable)
+2025-09-29 10:07:25 - INFO - 🔄 Scheduled reconnection after 15 minutes...
+2025-09-29 10:07:25 - INFO - 🔄 Reconnecting to all devices...
+2025-09-29 10:07:25 - INFO - 🔄 Starting process for device 1
+2025-09-29 10:07:25 - INFO - ✅ Process started for device 1 (PID: 201)
+2025-09-29 10:07:25 - INFO - 🔄 Starting process for device 2
+2025-09-29 10:07:25 - INFO - ✅ Process started for device 2 (PID: 204)
+2025-09-29 10:07:25 - INFO - 🔄 Starting process for device 3
+2025-09-29 10:07:25 - INFO - ✅ Process started for device 3 (PID: 205)
+2025-09-29 10:07:25 - INFO - ✅ All 3 device processes started successfully
+2025-09-29 10:07:25 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-09-29 10:07:25.707380
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-09-29 10:07:25 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-09-29 10:07:25.707393
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-09-29 10:07:25 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-09-29 10:07:25.707393
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-09-29 10:07:25 - INFO - Configured devices: 3 | Endpoint: https://pace.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-09-29 10:07:25 - INFO - Configured devices: 3 | Endpoint: https://pace.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-09-29 10:07:25 - INFO - Configured devices: 3 | Endpoint: https://pace.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-09-29 10:07:25 - INFO - 🔌 Starting RT capture for device 3 (10.30.141.5:4370)
+2025-09-29 10:07:25 - INFO - 🔌 Starting RT capture for device 1 (10.30.141.3:4370)
+2025-09-29 10:07:25 - INFO - 🔌 Starting RT capture for device 2 (10.30.141.4:4370)
+2025-09-29 10:07:25 - INFO - Device 1 (10.30.141.3:4370) - Connecting for RT capture...
+2025-09-29 10:07:25 - INFO - Device 2 (10.30.141.4:4370) - Connecting for RT capture...
+2025-09-29 10:07:25 - INFO - Device 3 (10.30.141.5:4370) - Connecting for RT capture...
+2025-09-29 10:07:25 - INFO - Device 3 (10.30.141.5:4370) - Connected - Real-time capture active
+2025-09-29 10:07:25 - INFO - Device 2 (10.30.141.4:4370) - Connected - Real-time capture active
+2025-09-29 10:07:25 - INFO - ℹ️ Device 3 connected (info unavailable)
+2025-09-29 10:07:25 - INFO - ℹ️ Device 2 connected (info unavailable)
+2025-09-29 10:07:25 - INFO - Device 1 (10.30.141.3:4370) - Connected - Real-time capture active
+2025-09-29 10:07:25 - INFO - ℹ️ Device 1 connected (info unavailable)
+2025-09-29 10:16:20 - INFO - 🕘 New attendance: user 694 @ 2025-09-29 10:14:26 (Dev 1)
+2025-09-29 10:16:20 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 10:16:20 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 10:16:20 - INFO - ✅ Push success (1 records)
+2025-09-29 10:22:19 - INFO - 🕘 New attendance: user 549 @ 2025-09-29 10:20:25 (Dev 1)
+2025-09-29 10:22:19 - INFO - ⏱️ Periodic flush (1 recs)
+2025-09-29 10:22:19 - INFO - Pushing 1 records to https://pace.paceeducation.com/erp-api/sync/empAttSync.php
+2025-09-29 10:22:19 - INFO - ✅ Push success (1 records)
+2025-09-29 10:22:26 - INFO - 🔄 Scheduled reconnection after 15 minutes...
+2025-09-29 10:22:26 - INFO - 🔄 Reconnecting to all devices...
+2025-09-29 10:22:26 - INFO - 🔄 Starting process for device 1
+2025-09-29 10:22:26 - INFO - ✅ Process started for device 1 (PID: 28659)
+2025-09-29 10:22:26 - INFO - 🔄 Starting process for device 2
+2025-09-29 10:22:26 - INFO - ✅ Process started for device 2 (PID: 28660)
+2025-09-29 10:22:26 - INFO - 🔄 Starting process for device 3
+2025-09-29 10:22:26 - INFO - ✅ Process started for device 3 (PID: 28661)
+2025-09-29 10:22:26 - INFO - ✅ All 3 device processes started successfully
+2025-09-29 10:22:26 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-09-29 10:22:26.658871
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-09-29 10:22:26 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-09-29 10:22:26.658875
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-09-29 10:22:26 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-09-29 10:22:26.658877
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-09-29 10:22:26 - INFO - Configured devices: 3 | Endpoint: https://pace.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-09-29 10:22:26 - INFO - Configured devices: 3 | Endpoint: https://pace.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-09-29 10:22:26 - INFO - Configured devices: 3 | Endpoint: https://pace.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-09-29 10:22:26 - INFO - 🔌 Starting RT capture for device 2 (10.30.141.4:4370)
+2025-09-29 10:22:26 - INFO - 🔌 Starting RT capture for device 3 (10.30.141.5:4370)
+2025-09-29 10:22:26 - INFO - 🔌 Starting RT capture for device 1 (10.30.141.3:4370)
+2025-09-29 10:22:26 - INFO - Device 2 (10.30.141.4:4370) - Connecting for RT capture...
+2025-09-29 10:22:26 - INFO - Device 3 (10.30.141.5:4370) - Connecting for RT capture...
+2025-09-29 10:22:26 - INFO - Device 1 (10.30.141.3:4370) - Connecting for RT capture...
+2025-09-29 10:22:26 - INFO - Device 3 (10.30.141.5:4370) - Connected - Real-time capture active
+2025-09-29 10:22:26 - INFO - ℹ️ Device 3 connected (info unavailable)
+2025-09-29 10:22:26 - INFO - Device 2 (10.30.141.4:4370) - Connected - Real-time capture active
+2025-09-29 10:22:26 - INFO - ℹ️ Device 2 connected (info unavailable)
+2025-09-29 10:22:27 - INFO - Device 1 (10.30.141.3:4370) - Error during RT capture - can't reach device (ping 10.30.141.3)
+2025-09-29 10:22:27 - ERROR - ❌ RT capture error dev 1: can't reach device (ping 10.30.141.3)
+2025-09-29 10:37:26 - INFO - 🔄 Scheduled reconnection after 15 minutes...
+2025-09-29 10:37:26 - INFO - 🔄 Reconnecting to all devices...
+2025-09-29 10:37:26 - INFO - 🔄 Starting process for device 1
+2025-09-29 10:37:26 - INFO - ✅ Process started for device 1 (PID: 57289)
+2025-09-29 10:37:26 - INFO - 🔄 Starting process for device 2
+2025-09-29 10:37:26 - INFO - ✅ Process started for device 2 (PID: 57290)
+2025-09-29 10:37:26 - INFO - 🔄 Starting process for device 3
+2025-09-29 10:37:26 - INFO - ✅ Process started for device 3 (PID: 57291)
+2025-09-29 10:37:26 - INFO - ✅ All 3 device processes started successfully
+2025-09-29 10:37:26 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-09-29 10:37:26.858955
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-09-29 10:37:26 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-09-29 10:37:26.858962
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-09-29 10:37:26 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-09-29 10:37:26.858959
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-09-29 10:37:26 - INFO - Configured devices: 3 | Endpoint: https://pace.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-09-29 10:37:26 - INFO - Configured devices: 3 | Endpoint: https://pace.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-09-29 10:37:26 - INFO - Configured devices: 3 | Endpoint: https://pace.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-09-29 10:37:26 - INFO - 🔌 Starting RT capture for device 1 (10.30.141.3:4370)
+2025-09-29 10:37:26 - INFO - Device 1 (10.30.141.3:4370) - Connecting for RT capture...
+2025-09-29 10:37:26 - INFO - 🔌 Starting RT capture for device 2 (10.30.141.4:4370)
+2025-09-29 10:37:26 - INFO - 🔌 Starting RT capture for device 3 (10.30.141.5:4370)
+2025-09-29 10:37:26 - INFO - Device 2 (10.30.141.4:4370) - Connecting for RT capture...
+2025-09-29 10:37:26 - INFO - Device 3 (10.30.141.5:4370) - Connecting for RT capture...
+2025-09-29 10:37:26 - INFO - Device 1 (10.30.141.3:4370) - Connected - Real-time capture active
+2025-09-29 10:37:26 - INFO - ℹ️ Device 1 connected (info unavailable)
+2025-09-29 10:37:26 - INFO - Device 2 (10.30.141.4:4370) - Connected - Real-time capture active
+2025-09-29 10:37:26 - INFO - ℹ️ Device 2 connected (info unavailable)
+2025-09-29 10:37:26 - INFO - Device 3 (10.30.141.5:4370) - Connected - Real-time capture active
+2025-09-29 10:37:26 - INFO - ℹ️ Device 3 connected (info unavailable)
+2025-09-29 10:52:27 - INFO - 🔄 Scheduled reconnection after 15 minutes...
+2025-09-29 10:52:27 - INFO - 🔄 Reconnecting to all devices...
+2025-09-29 10:52:27 - INFO - 🔄 Starting process for device 1
+2025-09-29 10:52:27 - INFO - ✅ Process started for device 1 (PID: 85500)
+2025-09-29 10:52:27 - INFO - 🔄 Starting process for device 2
+2025-09-29 10:52:27 - INFO - ✅ Process started for device 2 (PID: 85501)
+2025-09-29 10:52:27 - INFO - 🔄 Starting process for device 3
+2025-09-29 10:52:27 - INFO - ✅ Process started for device 3 (PID: 85502)
+2025-09-29 10:52:27 - INFO - ✅ All 3 device processes started successfully
+2025-09-29 10:52:27 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-09-29 10:52:27.583964
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-09-29 10:52:27 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-09-29 10:52:27.583965
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-09-29 10:52:27 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-09-29 10:52:27.583964
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-09-29 10:52:27 - INFO - Configured devices: 3 | Endpoint: https://pace.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-09-29 10:52:27 - INFO - Configured devices: 3 | Endpoint: https://pace.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-09-29 10:52:27 - INFO - Configured devices: 3 | Endpoint: https://pace.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-09-29 10:52:27 - INFO - 🔌 Starting RT capture for device 2 (10.30.141.4:4370)
+2025-09-29 10:52:27 - INFO - 🔌 Starting RT capture for device 1 (10.30.141.3:4370)
+2025-09-29 10:52:27 - INFO - 🔌 Starting RT capture for device 3 (10.30.141.5:4370)
+2025-09-29 10:52:27 - INFO - Device 2 (10.30.141.4:4370) - Connecting for RT capture...
+2025-09-29 10:52:27 - INFO - Device 1 (10.30.141.3:4370) - Connecting for RT capture...
+2025-09-29 10:52:27 - INFO - Device 3 (10.30.141.5:4370) - Connecting for RT capture...
+2025-09-29 10:52:27 - INFO - Device 1 (10.30.141.3:4370) - Connected - Real-time capture active
+2025-09-29 10:52:27 - INFO - ℹ️ Device 1 connected (info unavailable)
+2025-09-29 10:52:27 - INFO - Device 3 (10.30.141.5:4370) - Connected - Real-time capture active
+2025-09-29 10:52:27 - INFO - ℹ️ Device 3 connected (info unavailable)
+2025-09-29 10:52:27 - INFO - Device 2 (10.30.141.4:4370) - Connected - Real-time capture active
+2025-09-29 10:52:27 - INFO - ℹ️ Device 2 connected (info unavailable)
+2025-09-29 11:07:27 - INFO - 🔄 Scheduled reconnection after 15 minutes...
+2025-09-29 11:07:27 - INFO - 🔄 Reconnecting to all devices...
+2025-09-29 11:07:27 - INFO - 🔄 Starting process for device 1
+2025-09-29 11:07:27 - ERROR - ❌ Unexpected error in main loop: [Errno 32] Broken pipe
+2025-09-29 11:07:28 - INFO - 🔄 Terminating all device processes...
+2025-09-29 11:07:28 - INFO - 👋 Attendance ZTech System stopped
+2025-10-02 10:51:57 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 10:51:57.694696
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 10:51:57 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 10:51:57 - INFO - 🚀 Boot checks: waiting for network/DNS...
+2025-10-02 10:51:57 - INFO - ✅ Network/DNS looks OK
+2025-10-02 10:51:57 - INFO - 🔎 Waiting for at least one device to respond to ping...
+2025-10-02 10:51:57 - INFO - ✅ Ping OK for at least one device
+2025-10-02 10:51:58 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 10:51:58.595039
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 10:51:58 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 10:51:58 - INFO - 🧺 Shared buffer ready
+2025-10-02 10:51:58 - INFO - 🔁 Spawning RT capture processes...
+2025-10-02 10:51:58 - INFO - ▶️ Starting process for device 1
+2025-10-02 10:51:58 - INFO - ✅ Process started dev 1 (PID 91379)
+2025-10-02 10:51:58 - INFO - ✅ All 1 device processes started
+2025-10-02 10:51:58 - INFO - 🔗 Initial device connections done
+2025-10-02 10:51:58 - INFO - ⏰ Entering main loop...
+2025-10-02 10:51:58 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 10:51:58.693468
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 10:51:58 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 10:51:58 - INFO - 🔌 Starting RT capture for device 1 (10.50.141.32:4370)
+2025-10-02 10:51:58 - INFO - Device 1 (10.50.141.32:4370) - Connecting for RT capture...
+2025-10-02 10:51:58 - INFO - Device 1 (10.50.141.32:4370) - Error during RT capture - Unauthenticated
+2025-10-02 10:51:58 - ERROR - ❌ RT capture error dev 1: Unauthenticated
+2025-10-02 10:52:17 - INFO - ⏹️ Terminated by user
+2025-10-02 10:52:18 - INFO - 🛑 Stopping device processes...
+2025-10-02 10:52:18 - INFO - 👋 Attendance ZTech stopped
+2025-10-02 10:52:20 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 10:52:20.300711
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 10:52:20 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 10:52:20 - INFO - 🚀 Boot checks: waiting for network/DNS...
+2025-10-02 10:52:20 - INFO - ✅ Network/DNS looks OK
+2025-10-02 10:52:20 - INFO - 🔎 Waiting for at least one device to respond to ping...
+2025-10-02 10:52:28 - INFO - ⏹️ Script terminated by user
+2025-10-02 10:52:37 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 10:52:37.633759
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 10:52:37 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 10:52:37 - INFO - 🚀 Boot checks: waiting for network/DNS...
+2025-10-02 10:52:37 - INFO - ✅ Network/DNS looks OK
+2025-10-02 10:52:37 - INFO - 🔎 Waiting for at least one device to respond to ping...
+2025-10-02 10:52:37 - INFO - ✅ Ping OK for at least one device
+2025-10-02 10:52:38 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 10:52:38.434316
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 10:52:38 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 10:52:38 - INFO - 🧺 Shared buffer ready
+2025-10-02 10:52:38 - INFO - 🔁 Spawning RT capture processes...
+2025-10-02 10:52:38 - INFO - ▶️ Starting process for device 1
+2025-10-02 10:52:38 - INFO - ✅ Process started dev 1 (PID 93028)
+2025-10-02 10:52:38 - INFO - ✅ All 1 device processes started
+2025-10-02 10:52:38 - INFO - 🔗 Initial device connections done
+2025-10-02 10:52:38 - INFO - ⏰ Entering main loop...
+2025-10-02 10:52:38 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 10:52:38.530233
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 10:52:38 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 10:52:38 - INFO - 🔌 Starting RT capture for device 1 (10.50.141.32:4370)
+2025-10-02 10:52:38 - INFO - Device 1 (10.50.141.32:4370) - Connecting for RT capture...
+2025-10-02 10:52:38 - INFO - Device 1 (10.50.141.32:4370) - Error during RT capture - Unauthenticated
+2025-10-02 10:52:38 - ERROR - ❌ RT capture error dev 1: Unauthenticated
+2025-10-02 10:53:17 - INFO - ⏹️ Terminated by user
+2025-10-02 10:53:18 - INFO - 🛑 Stopping device processes...
+2025-10-02 10:53:18 - INFO - 👋 Attendance ZTech stopped
+2025-10-02 10:53:21 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 10:53:21.926587
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 10:53:21 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 10:53:21 - INFO - 🚀 Boot checks: waiting for network/DNS...
+2025-10-02 10:53:21 - INFO - ✅ Network/DNS looks OK
+2025-10-02 10:53:21 - INFO - 🔎 Waiting for at least one device to respond to ping...
+2025-10-02 10:53:21 - INFO - ✅ Ping OK for at least one device
+2025-10-02 10:53:22 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 10:53:22.705432
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 10:53:22 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 10:53:22 - INFO - 🧺 Shared buffer ready
+2025-10-02 10:53:22 - INFO - 🔁 Spawning RT capture processes...
+2025-10-02 10:53:22 - INFO - ▶️ Starting process for device 1
+2025-10-02 10:53:22 - INFO - ✅ Process started dev 1 (PID 94123)
+2025-10-02 10:53:22 - INFO - ✅ All 1 device processes started
+2025-10-02 10:53:22 - INFO - 🔗 Initial device connections done
+2025-10-02 10:53:22 - INFO - ⏰ Entering main loop...
+2025-10-02 10:53:22 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 10:53:22.845251
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 10:53:22 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 10:53:22 - INFO - 🔌 Starting RT capture for device 1 (10.50.141.32:4370)
+2025-10-02 10:53:22 - INFO - Device 1 (10.50.141.32:4370) - Connecting for RT capture...
+2025-10-02 10:53:23 - INFO - Device 1 (10.50.141.32:4370) - Error during RT capture - Unauthenticated
+2025-10-02 10:53:23 - ERROR - ❌ RT capture error dev 1: Unauthenticated
+2025-10-02 11:00:04 - INFO - ⏹️ Terminated by user
+2025-10-02 11:00:05 - INFO - 🛑 Stopping device processes...
+2025-10-02 11:00:05 - INFO - 👋 Attendance ZTech stopped
+2025-10-02 11:00:09 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 11:00:09.312961
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 11:00:09 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 11:00:09 - INFO - 🚀 Boot checks: waiting for network/DNS...
+2025-10-02 11:00:09 - INFO - ✅ Network/DNS looks OK
+2025-10-02 11:00:09 - INFO - 🔎 Waiting for at least one device to respond to ping...
+2025-10-02 11:00:09 - INFO - ✅ Ping OK for at least one device
+2025-10-02 11:00:10 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 11:00:10.130448
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 11:00:10 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 11:00:10 - INFO - 🧺 Shared buffer ready
+2025-10-02 11:00:10 - INFO - 🔁 Spawning RT capture processes...
+2025-10-02 11:00:10 - INFO - ▶️ Starting process for device 1
+2025-10-02 11:00:10 - INFO - ✅ Process started dev 1 (PID 3027)
+2025-10-02 11:00:10 - INFO - ✅ All 1 device processes started
+2025-10-02 11:00:10 - INFO - 🔗 Initial device connections done
+2025-10-02 11:00:10 - INFO - ⏰ Entering main loop...
+2025-10-02 11:00:10 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 11:00:10.218451
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 11:00:10 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 11:00:10 - INFO - 🔌 Starting RT capture for device 1 (10.50.141.32:4370)
+2025-10-02 11:00:10 - INFO - Device 1 (10.50.141.32:4370) - Connecting for RT capture...
+2025-10-02 11:00:10 - INFO - Device 1 (10.50.141.32:4370) - Error during RT capture - Unauthenticated
+2025-10-02 11:00:10 - ERROR - ❌ RT capture error dev 1: Unauthenticated
+2025-10-02 11:00:21 - INFO - ⏹️ Terminated by user
+2025-10-02 11:00:22 - INFO - 🛑 Stopping device processes...
+2025-10-02 11:00:22 - INFO - 👋 Attendance ZTech stopped
+2025-10-02 11:00:24 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 11:00:24.400569
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 11:00:24 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 11:00:24 - INFO - 🚀 Boot checks: waiting for network/DNS...
+2025-10-02 11:00:24 - INFO - ✅ Network/DNS looks OK
+2025-10-02 11:00:24 - INFO - 🔎 Waiting for at least one device to respond to ping...
+2025-10-02 11:00:24 - INFO - ✅ Ping OK for at least one device
+2025-10-02 11:00:25 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 11:00:25.193913
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 11:00:25 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 11:00:25 - INFO - 🧺 Shared buffer ready
+2025-10-02 11:00:25 - INFO - 🔁 Spawning RT capture processes...
+2025-10-02 11:00:25 - INFO - ▶️ Starting process for device 1
+2025-10-02 11:00:25 - INFO - ✅ Process started dev 1 (PID 3452)
+2025-10-02 11:00:25 - INFO - ✅ All 1 device processes started
+2025-10-02 11:00:25 - INFO - 🔗 Initial device connections done
+2025-10-02 11:00:25 - INFO - ⏰ Entering main loop...
+2025-10-02 11:00:25 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 11:00:25.282688
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 11:00:25 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 11:00:25 - INFO - 🔌 Starting RT capture for device 1 (10.50.141.32:4370)
+2025-10-02 11:00:25 - INFO - Device 1 (10.50.141.32:4370) - Connecting for RT capture...
+2025-10-02 11:00:25 - INFO - Device 1 (10.50.141.32:4370) - Error during RT capture - Unauthenticated
+2025-10-02 11:00:25 - ERROR - ❌ RT capture error dev 1: Unauthenticated
+2025-10-02 11:00:28 - INFO - ⏹️ Terminated by user
+2025-10-02 11:00:29 - INFO - 🛑 Stopping device processes...
+2025-10-02 11:00:29 - INFO - 👋 Attendance ZTech stopped
+2025-10-02 11:07:45 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 11:07:45.284451
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 11:07:45 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 11:07:45 - INFO - 🚀 Boot checks: waiting for network/DNS...
+2025-10-02 11:07:45 - INFO - ✅ Network/DNS looks OK
+2025-10-02 11:07:45 - INFO - 🔎 Waiting for at least one device to respond to ping...
+2025-10-02 11:07:45 - INFO - ✅ Ping OK for at least one device
+2025-10-02 11:07:46 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 11:07:46.112591
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 11:07:46 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 11:07:46 - INFO - 🧺 Shared buffer ready
+2025-10-02 11:07:46 - INFO - 🔁 Spawning RT capture processes...
+2025-10-02 11:07:46 - INFO - ▶️ Starting process for device 1
+2025-10-02 11:07:46 - INFO - ✅ Process started dev 1 (PID 11267)
+2025-10-02 11:07:46 - INFO - ✅ All 1 device processes started
+2025-10-02 11:07:46 - INFO - 🔗 Initial device connections done
+2025-10-02 11:07:46 - INFO - ⏰ Entering main loop...
+2025-10-02 11:07:46 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 11:07:46.196807
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 11:07:46 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 11:07:46 - INFO - 🔌 Starting RT capture for device 1 (10.50.141.32:4370)
+2025-10-02 11:07:46 - INFO - Device 1 (10.50.141.32:4370) - Connecting for RT capture...
+2025-10-02 11:07:46 - INFO - Device 1 (10.50.141.32:4370) - Error during RT capture - invalid literal for int() with base 10: 'pmbs@1234'
+2025-10-02 11:07:46 - ERROR - ❌ RT capture error dev 1: invalid literal for int() with base 10: 'pmbs@1234'
+2025-10-02 11:08:19 - INFO - ⏹️ Terminated by user
+2025-10-02 11:08:19 - INFO - 🛑 Stopping device processes...
+2025-10-02 11:08:19 - INFO - 👋 Attendance ZTech stopped
+2025-10-02 11:16:05 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 11:16:05.364858
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 11:16:05 - INFO - Configured devices: 2 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 11:16:05 - INFO - 🚀 Boot checks: waiting for network/DNS...
+2025-10-02 11:16:05 - INFO - ✅ Network/DNS looks OK
+2025-10-02 11:16:05 - INFO - 🔎 Waiting for at least one device to respond to ping...
+2025-10-02 11:16:05 - INFO - ✅ Ping OK for at least one device
+2025-10-02 11:16:06 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 11:16:06.162672
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 11:16:06 - INFO - Configured devices: 2 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 11:16:06 - INFO - 🧺 Shared buffer ready
+2025-10-02 11:16:06 - INFO - 🔁 Spawning RT capture processes...
+2025-10-02 11:16:06 - INFO - ▶️ Starting process for device 1
+2025-10-02 11:16:06 - INFO - ✅ Process started dev 1 (PID 22077)
+2025-10-02 11:16:06 - INFO - ▶️ Starting process for device 1
+2025-10-02 11:16:06 - INFO - ✅ Process started dev 1 (PID 22078)
+2025-10-02 11:16:06 - INFO - ✅ All 2 device processes started
+2025-10-02 11:16:06 - INFO - 🔗 Initial device connections done
+2025-10-02 11:16:06 - INFO - ⏰ Entering main loop...
+2025-10-02 11:16:06 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 11:16:06.250865
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 11:16:06 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 11:16:06.250866
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 11:16:06 - INFO - Configured devices: 2 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 11:16:06 - INFO - Configured devices: 2 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 11:16:06 - INFO - 🔌 Starting RT capture for device 1 (10.50.141.32:4370)
+2025-10-02 11:16:06 - INFO - 🔌 Starting RT capture for device 1 (10.50.141.7:4370)
+2025-10-02 11:16:06 - INFO - Device 1 (10.50.141.32:4370) - Connecting for RT capture...
+2025-10-02 11:16:06 - INFO - Device 1 (10.50.141.7:4370) - Connecting for RT capture...
+2025-10-02 11:16:06 - INFO - Device 1 (10.50.141.32:4370) - Error during RT capture - invalid literal for int() with base 10: 'pmbs@1234'
+2025-10-02 11:16:06 - ERROR - ❌ RT capture error dev 1: invalid literal for int() with base 10: 'pmbs@1234'
+2025-10-02 11:16:07 - INFO - Device 1 (10.50.141.7:4370) - Error during RT capture - can't reach device (ping 10.50.141.7)
+2025-10-02 11:16:07 - ERROR - ❌ RT capture error dev 1: can't reach device (ping 10.50.141.7)
+2025-10-02 11:17:02 - INFO - ⏹️ Terminated by user
+2025-10-02 11:17:02 - INFO - 🛑 Stopping device processes...
+2025-10-02 11:17:02 - INFO - 👋 Attendance ZTech stopped
+2025-10-02 11:17:04 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 11:17:04.966918
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 11:17:04 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 11:17:04 - INFO - 🚀 Boot checks: waiting for network/DNS...
+2025-10-02 11:17:04 - INFO - ✅ Network/DNS looks OK
+2025-10-02 11:17:04 - INFO - 🔎 Waiting for at least one device to respond to ping...
+2025-10-02 11:17:04 - INFO - ✅ Ping OK for at least one device
+2025-10-02 11:17:05 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 11:17:05.748250
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 11:17:05 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 11:17:05 - INFO - 🧺 Shared buffer ready
+2025-10-02 11:17:05 - INFO - 🔁 Spawning RT capture processes...
+2025-10-02 11:17:05 - INFO - ▶️ Starting process for device 1
+2025-10-02 11:17:05 - INFO - ✅ Process started dev 1 (PID 23392)
+2025-10-02 11:17:05 - INFO - ✅ All 1 device processes started
+2025-10-02 11:17:05 - INFO - 🔗 Initial device connections done
+2025-10-02 11:17:05 - INFO - ⏰ Entering main loop...
+2025-10-02 11:17:05 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 11:17:05.843808
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 11:17:05 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 11:17:05 - INFO - 🔌 Starting RT capture for device 1 (10.50.141.32:4370)
+2025-10-02 11:17:05 - INFO - Device 1 (10.50.141.32:4370) - Connecting for RT capture...
+2025-10-02 11:17:06 - INFO - Device 1 (10.50.141.32:4370) - Error during RT capture - Unauthenticated
+2025-10-02 11:17:06 - ERROR - ❌ RT capture error dev 1: Unauthenticated
+2025-10-02 11:18:11 - INFO - ⏹️ Terminated by user
+2025-10-02 11:18:11 - INFO - 🛑 Stopping device processes...
+2025-10-02 11:18:11 - INFO - 👋 Attendance ZTech stopped
+2025-10-02 11:18:13 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 11:18:13.597925
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 11:18:13 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 11:18:13 - INFO - 🚀 Boot checks: waiting for network/DNS...
+2025-10-02 11:18:13 - INFO - ✅ Network/DNS looks OK
+2025-10-02 11:18:13 - INFO - 🔎 Waiting for at least one device to respond to ping...
+2025-10-02 11:18:13 - INFO - ✅ Ping OK for at least one device
+2025-10-02 11:18:14 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 11:18:14.415898
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 11:18:14 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 11:18:14 - INFO - 🧺 Shared buffer ready
+2025-10-02 11:18:14 - INFO - 🔁 Spawning RT capture processes...
+2025-10-02 11:18:14 - INFO - ▶️ Starting process for device 1
+2025-10-02 11:18:14 - INFO - ✅ Process started dev 1 (PID 24883)
+2025-10-02 11:18:14 - INFO - ✅ All 1 device processes started
+2025-10-02 11:18:14 - INFO - 🔗 Initial device connections done
+2025-10-02 11:18:14 - INFO - ⏰ Entering main loop...
+2025-10-02 11:18:14 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 11:18:14.506400
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 11:18:14 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 11:18:14 - INFO - 🔌 Starting RT capture for device 1 (10.50.141.32:4370)
+2025-10-02 11:18:14 - INFO - Device 1 (10.50.141.32:4370) - Connecting for RT capture...
+2025-10-02 11:18:14 - INFO - Device 1 (10.50.141.32:4370) - Error during RT capture - Unauthenticated
+2025-10-02 11:18:14 - ERROR - ❌ RT capture error dev 1: Unauthenticated
+2025-10-02 11:19:01 - INFO - ⏹️ Terminated by user
+2025-10-02 11:19:01 - INFO - 🛑 Stopping device processes...
+2025-10-02 11:19:01 - INFO - 👋 Attendance ZTech stopped
+2025-10-02 11:19:06 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 11:19:06.953457
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 11:19:06 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 11:19:06 - INFO - 🚀 Boot checks: waiting for network/DNS...
+2025-10-02 11:19:06 - INFO - ✅ Network/DNS looks OK
+2025-10-02 11:19:06 - INFO - 🔎 Waiting for at least one device to respond to ping...
+2025-10-02 11:19:06 - INFO - ✅ Ping OK for at least one device
+2025-10-02 11:19:07 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 11:19:07.754674
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 11:19:07 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 11:19:07 - INFO - 🧺 Shared buffer ready
+2025-10-02 11:19:07 - INFO - 🔁 Spawning RT capture processes...
+2025-10-02 11:19:07 - INFO - ▶️ Starting process for device 1
+2025-10-02 11:19:07 - INFO - ✅ Process started dev 1 (PID 26145)
+2025-10-02 11:19:07 - INFO - ✅ All 1 device processes started
+2025-10-02 11:19:07 - INFO - 🔗 Initial device connections done
+2025-10-02 11:19:07 - INFO - ⏰ Entering main loop...
+2025-10-02 11:19:07 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 11:19:07.842175
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 11:19:07 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 11:19:07 - INFO - 🔌 Starting RT capture for device 1 (10.50.141.32:4370)
+2025-10-02 11:19:07 - INFO - Device 1 (10.50.141.32:4370) - Connecting for RT capture...
+2025-10-02 11:19:07 - INFO - Device 1 (10.50.141.32:4370) - Error during RT capture - Unauthenticated
+2025-10-02 11:19:07 - ERROR - ❌ RT capture error dev 1: Unauthenticated
+2025-10-02 11:30:43 - INFO - ⏹️ Terminated by user
+2025-10-02 11:30:43 - INFO - 🛑 Stopping device processes...
+2025-10-02 11:30:43 - INFO - 👋 Attendance ZTech stopped
+2025-10-02 11:30:46 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 11:30:46.164087
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 11:30:46 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 11:30:46 - INFO - 🚀 Boot checks: waiting for network/DNS...
+2025-10-02 11:30:46 - INFO - ✅ Network/DNS looks OK
+2025-10-02 11:30:46 - INFO - 🔎 Waiting for at least one device to respond to ping...
+2025-10-02 11:30:46 - INFO - ✅ Ping OK for at least one device
+2025-10-02 11:30:46 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 11:30:46.969478
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 11:30:46 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 11:30:46 - INFO - 🧺 Shared buffer ready
+2025-10-02 11:30:46 - INFO - 🔁 Spawning RT capture processes...
+2025-10-02 11:30:46 - INFO - ▶️ Starting process for device 1
+2025-10-02 11:30:46 - INFO - ✅ Process started dev 1 (PID 37039)
+2025-10-02 11:30:46 - INFO - ✅ All 1 device processes started
+2025-10-02 11:30:46 - INFO - 🔗 Initial device connections done
+2025-10-02 11:30:46 - INFO - ⏰ Entering main loop...
+2025-10-02 11:30:47 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 11:30:47.050488
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 11:30:47 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 11:30:47 - INFO - 🔌 Starting RT capture for device 1 (10.50.141.32:4370)
+2025-10-02 11:30:47 - INFO - Device 1 (10.50.141.32:4370) - Connecting for RT capture...
+2025-10-02 11:30:47 - INFO - Device 1 (10.50.141.32:4370) - Error during RT capture - Unauthenticated
+2025-10-02 11:30:47 - ERROR - ❌ RT capture error dev 1: Unauthenticated
+2025-10-02 11:31:12 - INFO - ⏹️ Terminated by user
+2025-10-02 11:31:13 - INFO - 🛑 Stopping device processes...
+2025-10-02 11:31:13 - INFO - 👋 Attendance ZTech stopped
+2025-10-02 11:31:18 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 11:31:18.382092
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 11:31:18 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 11:31:18 - INFO - 🚀 Boot checks: waiting for network/DNS...
+2025-10-02 11:31:18 - INFO - ✅ Network/DNS looks OK
+2025-10-02 11:31:18 - INFO - 🔎 Waiting for at least one device to respond to ping...
+2025-10-02 11:31:18 - INFO - ✅ Ping OK for at least one device
+2025-10-02 11:31:19 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 11:31:19.185420
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 11:31:19 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 11:31:19 - INFO - 🧺 Shared buffer ready
+2025-10-02 11:31:19 - INFO - 🔁 Spawning RT capture processes...
+2025-10-02 11:31:19 - INFO - ▶️ Starting process for device 1
+2025-10-02 11:31:19 - INFO - ✅ Process started dev 1 (PID 37795)
+2025-10-02 11:31:19 - INFO - ✅ All 1 device processes started
+2025-10-02 11:31:19 - INFO - 🔗 Initial device connections done
+2025-10-02 11:31:19 - INFO - ⏰ Entering main loop...
+2025-10-02 11:31:19 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 11:31:19.321050
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 11:31:19 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 11:31:19 - INFO - 🔌 Starting RT capture for device 1 (10.50.141.32:4370)
+2025-10-02 11:31:19 - INFO - Device 1 (10.50.141.32:4370) - Connecting for RT capture...
+2025-10-02 11:31:19 - INFO - Device 1 (10.50.141.32:4370) - Error during RT capture - Unauthenticated
+2025-10-02 11:31:19 - ERROR - ❌ RT capture error dev 1: Unauthenticated
+2025-10-02 11:31:52 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 11:31:52.789127
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 11:31:52 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 11:31:52 - INFO - 🚀 Boot checks: waiting for network/DNS...
+2025-10-02 11:31:52 - INFO - ✅ Network/DNS looks OK
+2025-10-02 11:31:52 - INFO - 🔎 Waiting for at least one device to respond to ping...
+2025-10-02 11:31:52 - INFO - ✅ Ping OK for at least one device
+2025-10-02 11:31:53 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 11:31:53.598962
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 11:31:53 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 11:31:53 - INFO - 🧺 Shared buffer ready
+2025-10-02 11:31:53 - INFO - 🔁 Spawning RT capture processes...
+2025-10-02 11:31:53 - INFO - ▶️ Starting process for device 1
+2025-10-02 11:31:53 - INFO - ✅ Process started dev 1 (PID 38608)
+2025-10-02 11:31:53 - INFO - ✅ All 1 device processes started
+2025-10-02 11:31:53 - INFO - 🔗 Initial device connections done
+2025-10-02 11:31:53 - INFO - ⏰ Entering main loop...
+2025-10-02 11:31:53 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 11:31:53.693475
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 11:31:53 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 11:31:53 - INFO - 🔌 Starting RT capture for device 1 (10.50.141.32:4370)
+2025-10-02 11:31:53 - INFO - Device 1 (10.50.141.32:4370) - Connecting for RT capture...
+2025-10-02 11:31:53 - INFO - Device 1 (10.50.141.32:4370) - Error during RT capture - Unauthenticated
+2025-10-02 11:31:53 - ERROR - ❌ RT capture error dev 1: Unauthenticated
+2025-10-02 11:32:33 - INFO - ⏹️ Terminated by user
+2025-10-02 11:32:34 - INFO - 🛑 Stopping device processes...
+2025-10-02 11:32:34 - INFO - 👋 Attendance ZTech stopped
+2025-10-02 11:37:40 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 11:37:40.428085
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 11:37:40 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 11:37:40 - INFO - 🚀 Boot checks: waiting for network/DNS...
+2025-10-02 11:37:40 - INFO - ✅ Network/DNS looks OK
+2025-10-02 11:37:40 - INFO - 🔎 Waiting for at least one device to respond to ping...
+2025-10-02 11:37:40 - INFO - ✅ Ping OK for at least one device
+2025-10-02 11:37:41 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 11:37:41.268521
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 11:37:41 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 11:37:41 - INFO - 🧺 Shared buffer ready
+2025-10-02 11:37:41 - INFO - 🔁 Spawning RT capture processes...
+2025-10-02 11:37:41 - INFO - ▶️ Starting process for device 1
+2025-10-02 11:37:41 - INFO - ✅ Process started dev 1 (PID 46091)
+2025-10-02 11:37:41 - INFO - ✅ All 1 device processes started
+2025-10-02 11:37:41 - INFO - 🔗 Initial device connections done
+2025-10-02 11:37:41 - INFO - ⏰ Entering main loop...
+2025-10-02 11:37:41 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 11:37:41.363273
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 11:37:41 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 11:37:41 - INFO - 🔌 Starting RT capture for device 1 (10.50.52.11:4370)
+2025-10-02 11:37:41 - INFO - Device 1 (10.50.52.11:4370) - Connecting for RT capture...
+2025-10-02 11:39:06 - INFO - Device 1 (10.50.52.11:4370) - Error during RT capture - [Errno 32] Broken pipe
+2025-10-02 11:39:06 - ERROR - ❌ RT capture error dev 1: [Errno 32] Broken pipe
+2025-10-02 11:46:54 - INFO - 🔁 Scheduled 15-min reconnect...
+2025-10-02 11:46:54 - INFO - 🔁 Spawning RT capture processes...
+2025-10-02 11:46:54 - INFO - ▶️ Starting process for device 1
+2025-10-02 11:46:54 - INFO - ✅ Process started dev 1 (PID 58636)
+2025-10-02 11:46:54 - INFO - ✅ All 1 device processes started
+2025-10-02 11:46:55 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 11:46:55.346455
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 11:46:55 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 11:46:55 - INFO - 🔌 Starting RT capture for device 1 (10.50.141.32:4370)
+2025-10-02 11:46:55 - INFO - Device 1 (10.50.141.32:4370) - Connecting for RT capture...
+2025-10-02 11:46:55 - INFO - Device 1 (10.50.141.32:4370) - Error during RT capture - Unauthenticated
+2025-10-02 11:46:55 - ERROR - ❌ RT capture error dev 1: Unauthenticated
+2025-10-02 11:49:34 - INFO - ⏹️ Terminated by user
+2025-10-02 11:49:35 - INFO - 🛑 Stopping device processes...
+2025-10-02 11:49:35 - INFO - 👋 Attendance ZTech stopped
+2025-10-02 11:49:43 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 11:49:43.180059
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 11:49:43 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 11:49:43 - INFO - 🚀 Boot checks: waiting for network/DNS...
+2025-10-02 11:49:43 - INFO - ✅ Network/DNS looks OK
+2025-10-02 11:49:43 - INFO - 🔎 Waiting for at least one device to respond to ping...
+2025-10-02 11:49:43 - INFO - ✅ Ping OK for at least one device
+2025-10-02 11:49:43 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 11:49:43.936681
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 11:49:43 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 11:49:43 - INFO - 🧺 Shared buffer ready
+2025-10-02 11:49:43 - INFO - 🔁 Spawning RT capture processes...
+2025-10-02 11:49:43 - INFO - ▶️ Starting process for device 1
+2025-10-02 11:49:43 - INFO - ✅ Process started dev 1 (PID 62242)
+2025-10-02 11:49:43 - INFO - ✅ All 1 device processes started
+2025-10-02 11:49:43 - INFO - 🔗 Initial device connections done
+2025-10-02 11:49:43 - INFO - ⏰ Entering main loop...
+2025-10-02 11:49:44 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 11:49:44.029969
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 11:49:44 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 11:49:44 - INFO - 🔌 Starting RT capture for device 1 (10.50.141.32:4370)
+2025-10-02 11:49:44 - INFO - Device 1 (10.50.141.32:4370) - Connecting for RT capture...
+2025-10-02 11:49:44 - INFO - Device 1 (10.50.141.32:4370) - Error during RT capture - Unauthenticated
+2025-10-02 11:49:44 - ERROR - ❌ RT capture error dev 1: Unauthenticated
+2025-10-02 11:50:36 - INFO - ⏹️ Terminated by user
+2025-10-02 11:50:37 - INFO - 🛑 Stopping device processes...
+2025-10-02 11:50:37 - INFO - 👋 Attendance ZTech stopped
+2025-10-02 11:50:38 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 11:50:38.510867
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 11:50:38 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 11:50:38 - INFO - 🚀 Boot checks: waiting for network/DNS...
+2025-10-02 11:50:38 - INFO - ✅ Network/DNS looks OK
+2025-10-02 11:50:38 - INFO - 🔎 Waiting for at least one device to respond to ping...
+2025-10-02 11:50:38 - INFO - ✅ Ping OK for at least one device
+2025-10-02 11:50:39 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 11:50:39.315787
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 11:50:39 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 11:50:39 - INFO - 🧺 Shared buffer ready
+2025-10-02 11:50:39 - INFO - 🔁 Spawning RT capture processes...
+2025-10-02 11:50:39 - INFO - ▶️ Starting process for device 1
+2025-10-02 11:50:39 - INFO - ✅ Process started dev 1 (PID 63421)
+2025-10-02 11:50:39 - INFO - ✅ All 1 device processes started
+2025-10-02 11:50:39 - INFO - 🔗 Initial device connections done
+2025-10-02 11:50:39 - INFO - ⏰ Entering main loop...
+2025-10-02 11:50:39 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 11:50:39.431878
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 11:50:39 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 11:50:39 - INFO - 🔌 Starting RT capture for device 1 (10.50.141.32:4370)
+2025-10-02 11:50:39 - INFO - Device 1 (10.50.141.32:4370) - Connecting for RT capture...
+2025-10-02 11:50:39 - INFO - Device 1 (10.50.141.32:4370) - Error during RT capture - Unauthenticated
+2025-10-02 11:50:39 - ERROR - ❌ RT capture error dev 1: Unauthenticated
+2025-10-02 11:50:40 - INFO - ⏹️ Terminated by user
+2025-10-02 11:50:41 - INFO - 🛑 Stopping device processes...
+2025-10-02 11:50:41 - INFO - 👋 Attendance ZTech stopped
+2025-10-02 11:50:59 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 11:50:59.825459
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 11:50:59 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 11:50:59 - INFO - 🚀 Boot checks: waiting for network/DNS...
+2025-10-02 11:50:59 - INFO - ✅ Network/DNS looks OK
+2025-10-02 11:50:59 - INFO - 🔎 Waiting for at least one device to respond to ping...
+2025-10-02 11:50:59 - INFO - ✅ Ping OK for at least one device
+2025-10-02 11:51:00 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 11:51:00.600543
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 11:51:00 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 11:51:00 - INFO - 🧺 Shared buffer ready
+2025-10-02 11:51:00 - INFO - 🔁 Spawning RT capture processes...
+2025-10-02 11:51:00 - INFO - ▶️ Starting process for device 1
+2025-10-02 11:51:00 - INFO - ✅ Process started dev 1 (PID 64002)
+2025-10-02 11:51:00 - INFO - ✅ All 1 device processes started
+2025-10-02 11:51:00 - INFO - 🔗 Initial device connections done
+2025-10-02 11:51:00 - INFO - ⏰ Entering main loop...
+2025-10-02 11:51:00 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 11:51:00.694380
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 11:51:00 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 11:51:00 - INFO - 🔌 Starting RT capture for device 1 (10.50.52.11:4370)
+2025-10-02 11:51:00 - INFO - Device 1 (10.50.52.11:4370) - Connecting for RT capture...
+2025-10-02 11:51:57 - INFO - ⏹️ Terminated by user
+2025-10-02 11:51:57 - INFO - 🛑 Stopping device processes...
+2025-10-02 11:51:57 - INFO - 👋 Attendance ZTech stopped
+2025-10-02 11:51:58 - INFO - ⏹️ Script terminated by user
+2025-10-02 11:51:59 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 11:51:59.104222
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 11:51:59 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 11:51:59 - INFO - 🚀 Boot checks: waiting for network/DNS...
+2025-10-02 11:51:59 - INFO - ✅ Network/DNS looks OK
+2025-10-02 11:51:59 - INFO - 🔎 Waiting for at least one device to respond to ping...
+2025-10-02 11:51:59 - INFO - ✅ Ping OK for at least one device
+2025-10-02 11:51:59 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 11:51:59.867176
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 11:51:59 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 11:51:59 - INFO - 🧺 Shared buffer ready
+2025-10-02 11:51:59 - INFO - 🔁 Spawning RT capture processes...
+2025-10-02 11:51:59 - INFO - ▶️ Starting process for device 1
+2025-10-02 11:51:59 - INFO - ✅ Process started dev 1 (PID 65295)
+2025-10-02 11:51:59 - INFO - ✅ All 1 device processes started
+2025-10-02 11:51:59 - INFO - 🔗 Initial device connections done
+2025-10-02 11:51:59 - INFO - ⏰ Entering main loop...
+2025-10-02 11:51:59 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 11:51:59.953749
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 11:51:59 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 11:51:59 - INFO - 🔌 Starting RT capture for device 1 (10.50.52.11:4370)
+2025-10-02 11:51:59 - INFO - Device 1 (10.50.52.11:4370) - Connecting for RT capture...
+2025-10-02 11:52:14 - INFO - ⏹️ Terminated by user
+2025-10-02 11:52:14 - INFO - 🛑 Stopping device processes...
+2025-10-02 11:52:14 - INFO - 👋 Attendance ZTech stopped
+2025-10-02 11:52:15 - INFO - ⏹️ Script terminated by user
+2025-10-02 11:52:18 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 11:52:18.360151
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 11:52:18 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 11:52:18 - INFO - 🚀 Boot checks: waiting for network/DNS...
+2025-10-02 11:52:18 - INFO - ✅ Network/DNS looks OK
+2025-10-02 11:52:18 - INFO - 🔎 Waiting for at least one device to respond to ping...
+2025-10-02 11:52:18 - INFO - ✅ Ping OK for at least one device
+2025-10-02 11:52:19 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 11:52:19.149948
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 11:52:19 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 11:52:19 - INFO - 🧺 Shared buffer ready
+2025-10-02 11:52:19 - INFO - 🔁 Spawning RT capture processes...
+2025-10-02 11:52:19 - INFO - ▶️ Starting process for device 1
+2025-10-02 11:52:19 - INFO - ✅ Process started dev 1 (PID 65793)
+2025-10-02 11:52:19 - INFO - ✅ All 1 device processes started
+2025-10-02 11:52:19 - INFO - 🔗 Initial device connections done
+2025-10-02 11:52:19 - INFO - ⏰ Entering main loop...
+2025-10-02 11:52:19 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 11:52:19.299475
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 11:52:19 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 11:52:19 - INFO - 🔌 Starting RT capture for device 1 (10.50.141.32:4370)
+2025-10-02 11:52:19 - INFO - Device 1 (10.50.141.32:4370) - Connecting for RT capture...
+2025-10-02 11:52:19 - INFO - Device 1 (10.50.141.32:4370) - Error during RT capture - Unauthenticated
+2025-10-02 11:52:19 - ERROR - ❌ RT capture error dev 1: Unauthenticated
+2025-10-02 12:01:55 - INFO - 🔁 Scheduled 15-min reconnect...
+2025-10-02 12:01:55 - INFO - 🔁 Spawning RT capture processes...
+2025-10-02 12:01:55 - INFO - ▶️ Starting process for device 1
+2025-10-02 12:01:55 - INFO - ✅ Process started dev 1 (PID 77758)
+2025-10-02 12:01:55 - INFO - ✅ All 1 device processes started
+2025-10-02 12:01:56 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 12:01:56.229048
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 12:01:56 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 12:01:56 - INFO - 🔌 Starting RT capture for device 1 (10.50.141.32:4370)
+2025-10-02 12:01:56 - INFO - Device 1 (10.50.141.32:4370) - Connecting for RT capture...
+2025-10-02 12:01:56 - INFO - Device 1 (10.50.141.32:4370) - Error during RT capture - Unauthenticated
+2025-10-02 12:01:56 - ERROR - ❌ RT capture error dev 1: Unauthenticated
+2025-10-02 12:03:29 - INFO - ⏹️ Terminated by user
+2025-10-02 12:03:30 - INFO - 🛑 Stopping device processes...
+2025-10-02 12:03:30 - INFO - 👋 Attendance ZTech stopped
+2025-10-02 12:03:34 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 12:03:34.025652
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 12:03:34 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 12:03:34 - INFO - 🚀 Boot checks: waiting for network/DNS...
+2025-10-02 12:03:34 - INFO - ✅ Network/DNS looks OK
+2025-10-02 12:03:34 - INFO - 🔎 Waiting for at least one device to respond to ping...
+2025-10-02 12:03:34 - INFO - ✅ Ping OK for at least one device
+2025-10-02 12:03:34 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 12:03:34.823183
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 12:03:34 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 12:03:34 - INFO - 🧺 Shared buffer ready
+2025-10-02 12:03:34 - INFO - 🔁 Spawning RT capture processes...
+2025-10-02 12:03:34 - INFO - ▶️ Starting process for device 1
+2025-10-02 12:03:34 - INFO - ✅ Process started dev 1 (PID 79949)
+2025-10-02 12:03:34 - INFO - ✅ All 1 device processes started
+2025-10-02 12:03:34 - INFO - 🔗 Initial device connections done
+2025-10-02 12:03:34 - INFO - ⏰ Entering main loop...
+2025-10-02 12:03:34 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 12:03:34.917261
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 12:03:34 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 12:03:34 - INFO - 🔌 Starting RT capture for device 1 (10.50.141.32:4370)
+2025-10-02 12:03:34 - INFO - Device 1 (10.50.141.32:4370) - Connecting for RT capture...
+2025-10-02 12:03:35 - INFO - Device 1 (10.50.141.32:4370) - Connected - Real-time capture active
+2025-10-02 12:03:35 - INFO - ℹ️ Device 1 connected (info unavailable)
+2025-10-02 12:04:07 - INFO - 🕘 New attendance: user 1326 @ 2025-10-02 12:04:08 (Dev 1)
+2025-10-02 12:04:37 - INFO - ⏱️ Periodic flush (1 recs)
+2025-10-02 12:04:37 - INFO - Pushing 1 records to https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php
+2025-10-02 12:04:38 - INFO - ✅ Push success (1 records)
+2025-10-02 12:16:56 - INFO - 🔁 Scheduled 15-min reconnect...
+2025-10-02 12:16:56 - INFO - 🔁 Spawning RT capture processes...
+2025-10-02 12:16:56 - INFO - ▶️ Starting process for device 1
+2025-10-02 12:16:56 - INFO - ✅ Process started dev 1 (PID 96421)
+2025-10-02 12:16:56 - INFO - ✅ All 1 device processes started
+2025-10-02 12:16:57 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 12:16:57.034320
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 12:16:57 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 12:16:57 - INFO - 🔌 Starting RT capture for device 1 (10.50.141.32:4370)
+2025-10-02 12:16:57 - INFO - Device 1 (10.50.141.32:4370) - Connecting for RT capture...
+2025-10-02 12:16:57 - INFO - Device 1 (10.50.141.32:4370) - Error during RT capture - Unauthenticated
+2025-10-02 12:16:57 - ERROR - ❌ RT capture error dev 1: Unauthenticated
+2025-10-02 12:18:35 - INFO - 🔁 Scheduled 15-min reconnect...
+2025-10-02 12:18:35 - INFO - 🔁 Spawning RT capture processes...
+2025-10-02 12:18:35 - INFO - ▶️ Starting process for device 1
+2025-10-02 12:18:35 - INFO - ✅ Process started dev 1 (PID 98455)
+2025-10-02 12:18:35 - INFO - ✅ All 1 device processes started
+2025-10-02 12:18:36 - INFO - === Attendance ZTech System Started ===
+Timestamp: 2025-10-02 12:18:36.396333
+Python: 3.13.2
+CWD: /Users/hashiqvh/Projects/attendance-ztech-python
+=======================================
+2025-10-02 12:18:36 - INFO - Configured devices: 1 | Endpoint: https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php | Buffer limit: 3 | Telegram: ENABLED
+2025-10-02 12:18:36 - INFO - 🔌 Starting RT capture for device 1 (10.50.141.32:4370)
+2025-10-02 12:18:36 - INFO - Device 1 (10.50.141.32:4370) - Connecting for RT capture...
+2025-10-02 12:18:36 - INFO - Device 1 (10.50.141.32:4370) - Connected - Real-time capture active
+2025-10-02 12:18:36 - INFO - ℹ️ Device 1 connected (info unavailable)

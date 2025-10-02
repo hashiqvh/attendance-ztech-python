@@ -1,21 +1,12 @@
 {
-  "endpoint": "https://pace.paceeducation.com/erp-api/sync/empAttSync.php",
-  "name": "pace-attendance",
+  "endpoint": "https://pmbs.paceeducation.com/erp-api/sync/empAttSync.php",
+  "name": "PMBS-attendance",
   "devices": [
     {
       "device_id": 1,
-      "ip_address": "10.30.141.3",
-      "port": 4370
-    },
-    {
-      "device_id": 2,
-      "ip_address": "10.30.141.4",
-      "port": 4370
-    },
-    {
-      "device_id": 3,
-      "ip_address": "10.30.141.5",
-      "port": 4370
+      "ip_address": "10.50.141.32",
+      "port": 4370,
+      "password": "4546"
     }
   ],
   "buffer_limit": 3,
@@ -23,7 +14,7 @@
 
   "telegram": {
     "bot_token": "7985099852:AAFL_aTu4g5pB-3xaKoUVrZy94oWGOa3HfY",
-    "chat_id": "495531116",
+    "chat_id": "-1003063465563",
     "enabled": true,
     "notifications": {
       "startup": true,
